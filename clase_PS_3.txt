@@ -1,0 +1,60 @@
+1.Cree dos archivos de texto similares (con una o dos líneas diferentes). Compárelos empleando diff.
+	New-Item Archivo1.txt -Value "Hola profe"
+	New-Item Archivo2.txt -Value "Hola :)"
+
+	diff -ReferenceObject (Get-Content Archivo1.txt) -diff (Get-Content Archivo2.txt)
+
+2.Qué ocurre si se ejecuta:
+get-service | export-csv servicios.csv | out-file
+Por qué?
+	Sale error porque al final no se le está dando el FilePath
+
+3.Cómo haría para crear un archivo delimitado por puntos y comas (;)? PISTA: Se emplea export-csv, pero con un parámetro adicional.
+	get-process | export-csv procesos.csv -Delimiter ';'
+
+
+4.Export-cliXML y Export-CSV modifican el sistema, porque pueden crear y sobreescribir archivos. Existe algún parámetro que evite la sobreescritura de un archivo existente? Existe algún parámetro que permita que el comando pregunte antes de sobresscribir un archivo?
+	set-ExecutionPolicy
+	
+
+5.Windows emplea configuraciones regionales, lo que incluye el separador de listas. En Windows en inglés, el separador de listas es la coma (,). Cómo se le dice a Export-CSV que emplee el separador del sistema en lugar de la coma?
+	get-process | export-csv procesos.csv -Delimiter ' '
+
+
+
+6.Identifique un cmdlet que permita generar un número aleatorio.
+	Get-Random 100
+
+
+7.Identifique un cmdlet que despliegue la fecha y hora actuales.
+	Get-Date
+
+
+8.Qué tipo de objeto produce el cmdlet de la pregunta 7?
+	int32		
+
+9Usando el cmdlet de la pregunta 7 y select-object, despliegue solamente el día de la semana, así:
+   DayOfWeek
+   ---------
+    Thursday
+	get-date | Select-Object -Property DayoFWeek
+
+
+10.Identifique un cmdlet que muestre información acerca de parches (hotfixes) instalados en el sistema.
+	Get-HotFix
+
+
+11.Empleando el cmdlet de la pregunta 10, muestre una lista de parches instalados. Luego extienda la expresión para ordenar la lista por fecha de instalación, y muestre en pantalla únicamente la fecha de instalación, el usuario que instaló el parche, y el ID del parche. Recuerde examinar los nombres de las propiedades.
+	Get-HotFix | select -Property InstalledOn,InstalledBy,HotfixID | sort InstalledOn
+
+
+
+12.Complemente la solución a la pregunta 11, para que el sistema ordene los resultados por la descripción del parche, e incluya en el listado la descripción, el ID del parche, y la fecha de instalación. Escriba los resultados a un archivo HTML.
+	Get-HotFix | select -Property InstalledOn,HotfixID,Description | sort Description | ConvertTo-Html
+
+
+
+13.Muestre una lista de las 50 entradas más nuevas del log de eventos System. Ordene la lista de modo que las entradas más antiguas aparezcan primero; las entradas producidas al mismo tiempo deben ordenarse por número índice. Muestre el número índice, la hora y la fuente para cada entrada. Escriba esta información en un archivo de texto plano.
+	Get-EventLog system -Newest 50 | select -Property index,TimeGenerated,source | sort time,index | Out-File Fix.txt
+
+

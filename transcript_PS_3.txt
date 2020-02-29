@@ -1,0 +1,488 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20200228221417
+Nombre de usuario: TOM\Paola Fuentes Caro
+Usuario RunAs: TOM\Paola Fuentes Caro
+Nombre de la configuración: 
+Máquina: TOM (Microsoft Windows NT 10.0.18362.0)
+Aplicación host: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Id. de proceso: 10880
+PSVersion: 5.1.18362.628
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.628
+BuildVersion: 10.0.18362.628
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Paola Fuentes Caro\Documents\PowerShell_transcript.TOM.rsvpNYnZ.20200228221417.txt
+PS C:\WINDOWS\system32> ErrorTerminación(): "Se ha detenido la canalización."
+>> New-Item Archivo1.txt -Value Hola profe
+>> ErrorTerminación(New-Item): "No se encuentra ningún parámetro de posición que acepte el argumento 'profe'."
+New-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'profe'.
+En línea: 1 Carácter: 1
++ New-Item Archivo1.txt -Value Hola profe
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'profe'.
+En línea: 1 Carácter: 1
++ New-Item Archivo1.txt -Value Hola profe
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\WINDOWS\system32> New-Item Archivo1.txt -Value "Hola profe"
+
+
+    Directorio: C:\WINDOWS\system32
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----    28/02/2020  10:16 p. m.             10 Archivo1.txt
+
+
+PS C:\WINDOWS\system32> New-Item Archivo2.txt -Value "Hola :)"
+
+
+    Directorio: C:\WINDOWS\system32
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----    28/02/2020  10:17 p. m.              7 Archivo2.txt
+
+
+PS C:\WINDOWS\system32> diff -ReferenceObject (Get-Content Archivo1.txt) -diff (Get-Content Archivo2.txt)
+
+InputObject SideIndicator
+----------- -------------
+Hola :)     =>
+Hola profe  <=
+
+
+PS C:\WINDOWS\system32> get-service | export-csv servicios.csv | out-file
+>> ErrorTerminación(Out-File): "No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del argumento "path" a un valor no nulo."
+out-file : No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del 
+argumento "path" a un valor no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | out-file
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCommand
+out-file : No se puede procesar el argumento porque el valor del argumento "path" es NULL. Cambie el valor del argumento "path" a un valor
+no nulo.
+En línea: 1 Carácter: 42
++ get-service | export-csv servicios.csv | out-file
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCommand
+
+PS C:\WINDOWS\system32> get-process | export-csv procesos.csv -Delimiter ';'
+PS C:\WINDOWS\system32> set-itemproperty -path .\Archivo2.txt -name Attributes -value "ReadOnly"
+PS C:\WINDOWS\system32> set-itemproperty -path .\Archivo2.txt -name Attributes -value "archive"
+PS C:\WINDOWS\system32> help Get-ExecutionPolicy
+
+NOMBRE
+    Get-ExecutionPolicy
+
+SINOPSIS
+    Gets the execution policies for the current session.
+
+
+SINTAXIS
+    Get-ExecutionPolicy [[-Scope] {Process | CurrentUser | LocalMachine | UserPolicy | MachinePolicy}] [-List] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-ExecutionPolicy cmdlet gets the execution policies for the current session.
+
+    The execution policy is determined by execution policies that you set by using Set-ExecutionPolicy and the Group Policy settings for
+    the Windows PowerShell execution policy. The default value is Restricted.
+
+    Without parameters, Get-ExecutionPolicy gets the execution policy that is effective in the session. You can use the List parameter to
+    get all execution policies that affect the session or the Scope parameter to get the execution policy for a particular scope.
+
+    For more information, see about_Execution_Policies (http://go.microsoft.com/fwlink/?LinkID=135170).
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821714
+    Get-AuthenticodeSignature
+    Set-AuthenticodeSignature
+    Set-ExecutionPolicy
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-ExecutionPolicy -examples".
+    Para obtener más información, escriba: "get-help Get-ExecutionPolicy -detailed".
+    Para obtener información técnica, escriba: "get-help Get-ExecutionPolicy -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-ExecutionPolicy -online"
+
+
+PS C:\WINDOWS\system32> help set-ExecutionPolicy
+
+NOMBRE
+    Set-ExecutionPolicy
+
+SINOPSIS
+    Changes the user preference for the Windows PowerShell execution policy.
+
+
+SINTAXIS
+    Set-ExecutionPolicy [-ExecutionPolicy] {Unrestricted | RemoteSigned | AllSigned | Restricted | Default | Bypass | Undefined} [[-Scope]
+    {Process | CurrentUser | LocalMachine | UserPolicy | MachinePolicy}] [-Confirm] [-Force] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Set-ExecutionPolicy cmdlet changes the user preference for the Windows PowerShell execution policy.
+
+    The execution policy is part of the security strategy of Windows PowerShell. It determines whether you can load configuration files
+    (including your Windows PowerShell profile) and run scripts, and it determines which scripts, if any, must be digitally signed before
+    they will run. For more information, see about_Execution_Policies (http://go.microsoft.com/fwlink/?LinkID=135170).
+
+    To change the execution policy for the default (LocalMachine) scope, start Windows PowerShell with the "Run as administrator" option.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821719
+    Get-AuthenticodeSignature
+    Get-ExecutionPolicy
+    Set-AuthenticodeSignature
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Set-ExecutionPolicy -examples".
+    Para obtener más información, escriba: "get-help Set-ExecutionPolicy -detailed".
+    Para obtener información técnica, escriba: "get-help Set-ExecutionPolicy -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Set-ExecutionPolicy -online"
+
+
+PS C:\WINDOWS\system32> help Export-Csv
+
+NOMBRE
+    Export-Csv
+
+SINOPSIS
+    Converts objects into a series of comma-separated (CSV) strings and saves the strings in a CSV file.
+
+
+SINTAXIS
+    Export-Csv [[-Path] <String>] [[-Delimiter] <Char>] [-Append] [-Confirm] [-Encoding {Unicode | UTF7 | UTF8 | ASCII | UTF32 |
+    BigEndianUnicode | Default | OEM}] [-Force] -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber] [-NoTypeInformation]
+    [-WhatIf] [<CommonParameters>]
+
+    Export-Csv [[-Path] <String>] [-Append] [-Confirm] [-Encoding {Unicode | UTF7 | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default |
+    OEM}] [-Force] -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber] [-NoTypeInformation] [-UseCulture] [-WhatIf]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Export-CSV cmdlet creates a CSV file of the objects that you submit. Each object is represented as a line or row of the CSV. The
+    row consists of a comma-separated list of the values of object properties. You can use this cmdlet to create spreadsheets and share
+    data with programs that take CSV files as input.
+
+    Do not format objects before sending them to the Export-CSV cmdlet. If you do, the format properties are represented in the CSV file,
+    instead of the properties of the original objects. To export only selected properties of an object, use the Select-Object cmdlet.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821769
+    ConvertFrom-Csv
+    ConvertTo-Csv
+    Format-Table
+    Import-Csv
+    Select-Object
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Export-Csv -examples".
+    Para obtener más información, escriba: "get-help Export-Csv -detailed".
+    Para obtener información técnica, escriba: "get-help Export-Csv -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Export-Csv -online"
+
+
+PS C:\WINDOWS\system32> Get-Help Export-Csv
+
+NOMBRE
+    Export-Csv
+
+SINOPSIS
+    Converts objects into a series of comma-separated (CSV) strings and saves the strings in a CSV file.
+
+
+SINTAXIS
+    Export-Csv [[-Path] <String>] [[-Delimiter] <Char>] [-Append] [-Confirm] [-Encoding {Unicode | UTF7 | UTF8 | ASCII | UTF32 |
+    BigEndianUnicode | Default | OEM}] [-Force] -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber] [-NoTypeInformation]
+    [-WhatIf] [<CommonParameters>]
+
+    Export-Csv [[-Path] <String>] [-Append] [-Confirm] [-Encoding {Unicode | UTF7 | UTF8 | ASCII | UTF32 | BigEndianUnicode | Default |
+    OEM}] [-Force] -InputObject <PSObject> [-LiteralPath <String>] [-NoClobber] [-NoTypeInformation] [-UseCulture] [-WhatIf]
+    [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Export-CSV cmdlet creates a CSV file of the objects that you submit. Each object is represented as a line or row of the CSV. The
+    row consists of a comma-separated list of the values of object properties. You can use this cmdlet to create spreadsheets and share
+    data with programs that take CSV files as input.
+
+    Do not format objects before sending them to the Export-CSV cmdlet. If you do, the format properties are represented in the CSV file,
+    instead of the properties of the original objects. To export only selected properties of an object, use the Select-Object cmdlet.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821769
+    ConvertFrom-Csv
+    ConvertTo-Csv
+    Format-Table
+    Import-Csv
+    Select-Object
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Export-Csv -examples".
+    Para obtener más información, escriba: "get-help Export-Csv -detailed".
+    Para obtener información técnica, escriba: "get-help Export-Csv -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Export-Csv -online"
+
+
+PS C:\WINDOWS\system32> help random
+
+NOMBRE
+    Get-Random
+
+SINOPSIS
+    Gets a random number, or selects objects randomly from a collection.
+
+
+SINTAXIS
+    Get-Random [-InputObject] <Object[]> [-Count <Int32>] [-SetSeed <Int32>] [<CommonParameters>]
+
+    Get-Random [[-Maximum] <Object>] [-Minimum <Object>] [-SetSeed <Int32>] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Random cmdlet gets a randomly selected number. If you submit a collection of objects to Get-Random , it gets one or more
+    randomly selected objects from the collection.
+
+    Without parameters or input, a Get-Random command returns a randomly selected 32-bit unsigned integer between 0 (zero) and
+    Int32.MaxValue (0x7FFFFFFF, 2,147,483,647).
+
+    You can use the parameters of Get-Random to specify a seed number, minimum and maximum values, and the number of objects returned from
+    a submitted collection.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821799
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-Random -examples".
+    Para obtener más información, escriba: "get-help Get-Random -detailed".
+    Para obtener información técnica, escriba: "get-help Get-Random -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-Random -online"
+
+
+PS C:\WINDOWS\system32> Get-Random 100
+33
+PS C:\WINDOWS\system32> help date
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Update-Help                       Cmdlet    Microsoft.PowerShell.Core Downloads and installs the newest help files on your computer.
+Get-Date                          Cmdlet    Microsoft.PowerShell.U... Gets the current date and time.
+Set-Date                          Cmdlet    Microsoft.PowerShell.U... Changes the system time on the computer to a time that you specify.
+Update-FormatData                 Cmdlet    Microsoft.PowerShell.U... Updates the formatting data in the current session.
+Update-List                       Cmdlet    Microsoft.PowerShell.U... Adds items to and removes items from a property value that contain...
+Update-TypeData                   Cmdlet    Microsoft.PowerShell.U... Updates the extended type data in the session.
+Update-Script                     Function  PowerShellGet             ...
+Update-ModuleManifest             Function  PowerShellGet             ...
+Update-Module                     Function  PowerShellGet             ...
+Update-ScriptFileInfo             Function  PowerShellGet             ...
+Update-MpSignature                Function  ConfigDefender            ...
+Update-WIMBootEntry               Cmdlet    Dism                      Update-WIMBootEntry...
+Update-AutologgerConfig           Function  EventTracingManagement    ...
+Update-EtwTraceSession            Function  EventTracingManagement    ...
+Update-IscsiTarget                Function  iSCSI                     ...
+Update-IscsiTargetPortal          Function  iSCSI                     ...
+Update-NetIPsecRule               Function  NetSecurity               ...
+Update-DscConfiguration           Function  PSDesiredStateConfigur... ...
+Update-SmbMultichannelConnection  Function  SmbShare                  ...
+Update-Disk                       Function  Storage                   ...
+Update-StorageFirmware            Function  Storage                   ...
+Update-StoragePool                Function  Storage                   ...
+Update-StorageProviderCache       Function  Storage                   ...
+Update-HostStorageCache           Function  Storage                   ...
+Get-WindowsUpdateLog              Function  WindowsUpdate             ...
+Install-WUUpdates                 Function  WindowsUpdateProvider     ...
+Get-WULastScanSuccessDate         Function  WindowsUpdateProvider     ...
+Get-WULastInstallationDate        Function  WindowsUpdateProvider     ...
+
+
+PS C:\WINDOWS\system32> Get-Date
+
+viernes, 28 de febrero de 2020 11:18:10 p. m.
+
+
+PS C:\WINDOWS\system32> help Get-Date 
+
+NOMBRE
+    Get-Date
+
+SINOPSIS
+    Gets the current date and time.
+
+
+SINTAXIS
+    Get-Date [[-Date] <DateTime>] [-Day <Int32>] [-DisplayHint {Date | Time | DateTime}] [-Format <String>] [-Hour <Int32>] [-Millisecond
+    <Int32>] [-Minute <Int32>] [-Month <Int32>] [-Second <Int32>] [-Year <Int32>] [<CommonParameters>]
+
+    Get-Date [[-Date] <DateTime>] [-Day <Int32>] [-DisplayHint {Date | Time | DateTime}] [-Hour <Int32>] [-Millisecond <Int32>] [-Minute
+    <Int32>] [-Month <Int32>] [-Second <Int32>] [-UFormat <String>] [-Year <Int32>] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Date cmdlet gets a DateTime object that represents the current date or a date that you specify. It can format the date and
+    time in several Windows and UNIX formats. You can use Get-Date to generate a date or time character string, and then send the string
+    to other cmdlets or programs.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821781
+    New-TimeSpan
+    Set-Date
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-Date -examples".
+    Para obtener más información, escriba: "get-help Get-Date -detailed".
+    Para obtener información técnica, escriba: "get-help Get-Date -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-Date -online"
+
+
+PS C:\WINDOWS\system32> get-date | Select-Object -Property DayoFWeek
+
+DayOfWeek
+---------
+   Friday
+
+
+PS C:\WINDOWS\system32> System.dateTime
+System.dateTime : El término 'System.dateTime' no se reconoce como nombre de un cmdlet, función, archivo de script o 
+programa ejecutable. Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que 
+dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ System.dateTime
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (System.dateTime:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+System.dateTime : El término 'System.dateTime' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si
+escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ System.dateTime
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (System.dateTime:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\WINDOWS\system32> help hotfix
+
+NOMBRE
+    Get-HotFix
+
+SINOPSIS
+    Gets the hotfixes that have been applied to the local and remote computers.
+
+
+SINTAXIS
+    Get-HotFix [-ComputerName <String[]>] [-Credential <PSCredential>] [-Description <String[]>] [<CommonParameters>]
+
+    Get-HotFix [[-Id] <String[]>] [-ComputerName <String[]>] [-Credential <PSCredential>] [<CommonParameters>]
+
+
+DESCRIPCIÓN
+    The Get-Hotfix cmdlet gets hotfixes (also called updates) that have been installed on either the local computer (or on specified remote computers) by
+    Windows Update, Microsoft Update, or Windows Server Update Services; the cmdlet also gets hotfixes or updates that have been installed manually by
+    users.
+
+
+VÍNCULOS RELACIONADOS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821586
+    Win32_QuickFixEngineering http://go.microsoft.com/fwlink/?LinkID=145071
+    Get-ComputerRestorePoint
+    Add-Content
+
+NOTAS
+    Para ver los ejemplos, escriba: "get-help Get-HotFix -examples".
+    Para obtener más información, escriba: "get-help Get-HotFix -detailed".
+    Para obtener información técnica, escriba: "get-help Get-HotFix -full".
+    Para obtener ayuda disponible en línea, escriba: "get-help Get-HotFix -online"
+
+
+PS C:\WINDOWS\system32> Get-HotFix
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+TOM           Update           KB4534132     NT AUTHORITY\SYSTEM  16/02/2020 12:00:00 a. m.
+TOM           Security Update  KB4503308                          9/07/2019 12:00:00 a. m.
+TOM           Update           KB4506472                          9/07/2019 12:00:00 a. m.
+TOM           Security Update  KB4508433     NT AUTHORITY\SYSTEM  14/08/2019 12:00:00 a. m.
+TOM           Security Update  KB4509096                          9/07/2019 12:00:00 a. m.
+TOM           Security Update  KB4515383     NT AUTHORITY\SYSTEM  12/09/2019 12:00:00 a. m.
+TOM           Security Update  KB4516115     NT AUTHORITY\SYSTEM  15/09/2019 12:00:00 a. m.
+TOM           Security Update  KB4520390     NT AUTHORITY\SYSTEM  5/10/2019 12:00:00 a. m.
+TOM           Security Update  KB4521863     NT AUTHORITY\SYSTEM  10/10/2019 12:00:00 a. m.
+TOM           Security Update  KB4524569     NT AUTHORITY\SYSTEM  13/11/2019 12:00:00 a. m.
+TOM           Security Update  KB4528759     NT AUTHORITY\SYSTEM  22/01/2020 12:00:00 a. m.
+TOM           Security Update  KB4537759     NT AUTHORITY\SYSTEM  16/02/2020 12:00:00 a. m.
+TOM           Security Update  KB4538674     NT AUTHORITY\SYSTEM  15/02/2020 12:00:00 a. m.
+TOM           Update           KB4532693     NT AUTHORITY\SYSTEM  16/02/2020 12:00:00 a. m.
+
+
+PS C:\WINDOWS\system32> Get-HotFix | select -Property InstalledOn,InstalledBy,HotfixID | sort InstalledOn
+
+
+InstalledOn               InstalledBy         HotfixID
+-----------               -----------         --------
+9/07/2019 12:00:00 a. m.                      KB4503308
+9/07/2019 12:00:00 a. m.                      KB4506472
+9/07/2019 12:00:00 a. m.                      KB4509096
+14/08/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4508433
+12/09/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4515383
+15/09/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4516115
+5/10/2019 12:00:00 a. m.  NT AUTHORITY\SYSTEM KB4520390
+10/10/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4521863
+13/11/2019 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4524569
+22/01/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4528759
+15/02/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4538674
+16/02/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4534132
+16/02/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4537759
+16/02/2020 12:00:00 a. m. NT AUTHORITY\SYSTEM KB4532693
+
+
+PS C:\WINDOWS\system32> Get-HotFix | select -Property InstalledOn,HotfixID,Description | sort Description | ConvertTo-Html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>HTML TABLE</title>
+</head><body>
+<table>
+<colgroup><col/><col/><col/></colgroup>
+<tr><th>InstalledOn</th><th>HotfixID</th><th>Description</th></tr>
+<tr><td>9/07/2019 12:00:00 a. m.</td><td>KB4503308</td><td>Security Update</td></tr>
+<tr><td>14/08/2019 12:00:00 a. m.</td><td>KB4508433</td><td>Security Update</td></tr>
+<tr><td>9/07/2019 12:00:00 a. m.</td><td>KB4509096</td><td>Security Update</td></tr>
+<tr><td>12/09/2019 12:00:00 a. m.</td><td>KB4515383</td><td>Security Update</td></tr>
+<tr><td>15/09/2019 12:00:00 a. m.</td><td>KB4516115</td><td>Security Update</td></tr>
+<tr><td>5/10/2019 12:00:00 a. m.</td><td>KB4520390</td><td>Security Update</td></tr>
+<tr><td>10/10/2019 12:00:00 a. m.</td><td>KB4521863</td><td>Security Update</td></tr>
+<tr><td>13/11/2019 12:00:00 a. m.</td><td>KB4524569</td><td>Security Update</td></tr>
+<tr><td>22/01/2020 12:00:00 a. m.</td><td>KB4528759</td><td>Security Update</td></tr>
+<tr><td>16/02/2020 12:00:00 a. m.</td><td>KB4537759</td><td>Security Update</td></tr>
+<tr><td>15/02/2020 12:00:00 a. m.</td><td>KB4538674</td><td>Security Update</td></tr>
+<tr><td>16/02/2020 12:00:00 a. m.</td><td>KB4534132</td><td>Update</td></tr>
+<tr><td>9/07/2019 12:00:00 a. m.</td><td>KB4506472</td><td>Update</td></tr>
+<tr><td>16/02/2020 12:00:00 a. m.</td><td>KB4532693</td><td>Update</td></tr>
+</table>
+</body></html>
+PS C:\WINDOWS\system32> Get-EventLog system -Newest 50 | select -Property index,TimeGenerated,source | sort time,index | Out-File Fix.txt
+PS C:\WINDOWS\system32> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20200228235348
+**********************
