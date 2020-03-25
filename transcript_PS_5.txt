@@ -1,0 +1,485 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20200324222552
+Nombre de usuario: TOM\Paola Fuentes Caro
+Usuario RunAs: TOM\Paola Fuentes Caro
+Nombre de la configuración: 
+Máquina: TOM (Microsoft Windows NT 10.0.18362.0)
+Aplicación host: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Id. de proceso: 7788
+PSVersion: 5.1.18362.628
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.628
+BuildVersion: 10.0.18362.628
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Paola Fuentes Caro\Documents\PowerShell_transcript.TOM.VSQDohM+.20200324222552.txt
+PS C:\Users\Paola Fuentes Caro> Get-CimInstance Win32_NetworkAdapterConfiguration | Select-Object IP
+
+
+Description             : Microsoft Kernel Debug Network Adapter
+Index                   : 0
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : Broadcom NetLink (TM) Gigabit Ethernet
+Index                   : 1
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : Qualcomm Atheros AR5BWB222 Wireless Network Adapter
+Index                   : 2
+IPAddress               : {192.168.1.7, fe80::3d1e:4302:a08e:489a,
+                          ::dde8:ff48:453e:c58a, ::3d1e:4302:a08e:489a}
+IPConnectionMetric      : 40
+IPEnabled               : True
+IPFilterSecurityEnabled : False
+
+Description             : Microsoft Wi-Fi Direct Virtual Adapter
+Index                   : 3
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : Microsoft Wi-Fi Direct Virtual Adapter
+Index                   : 4
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : Bluetooth Device (Personal Area Network)
+Index                   : 5
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (SSTP)
+Index                   : 6
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (IKEv2)
+Index                   : 7
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (L2TP)
+Index                   : 8
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (PPTP)
+Index                   : 9
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (PPPOE)
+Index                   : 10
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (IP)
+Index                   : 11
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (IPv6)
+Index                   : 12
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : WAN Miniport (Network Monitor)
+Index                   : 13
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : Microsoft Hosted Network Virtual Adapter
+Index                   : 14
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : TAP-Windows Adapter V9
+Index                   : 15
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : RAS Async Adapter
+Index                   : 16
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+Description             : Kaspersky Security Data Escort Adapter
+Index                   : 17
+IPAddress               :
+IPConnectionMetric      :
+IPEnabled               : False
+IPFilterSecurityEnabled :
+
+
+
+PS C:\Users\Paola Fuentes Caro> Get-WmiObject -Namespace root\CIMv2 -Class Win32_QuickFixEngineering
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+TOM           Update           KB4534132     NT AUTHORITY\SYSTEM  16/02/2020 12:0...
+TOM           Security Update  KB4503308                          9/07/2019 12:00...
+TOM           Update           KB4506472                          9/07/2019 12:00...
+TOM           Security Update  KB4508433     NT AUTHORITY\SYSTEM  14/08/2019 12:0...
+TOM           Security Update  KB4509096                          9/07/2019 12:00...
+TOM           Security Update  KB4515383     NT AUTHORITY\SYSTEM  12/09/2019 12:0...
+TOM           Security Update  KB4516115     NT AUTHORITY\SYSTEM  15/09/2019 12:0...
+TOM           Security Update  KB4520390     NT AUTHORITY\SYSTEM  5/10/2019 12:00...
+TOM           Security Update  KB4521863     NT AUTHORITY\SYSTEM  10/10/2019 12:0...
+TOM           Security Update  KB4524569     NT AUTHORITY\SYSTEM  13/11/2019 12:0...
+TOM           Security Update  KB4528759     NT AUTHORITY\SYSTEM  22/01/2020 12:0...
+TOM           Security Update  KB4537759     NT AUTHORITY\SYSTEM  16/02/2020 12:0...
+TOM           Security Update  KB4538674     NT AUTHORITY\SYSTEM  15/02/2020 12:0...
+TOM           Security Update  KB4541338     NT AUTHORITY\SYSTEM  12/03/2020 12:0...
+TOM           Update           KB4551762     NT AUTHORITY\SYSTEM  14/03/2020 12:0...
+
+
+PS C:\Users\Paola Fuentes Caro> Get-WmiObject win32_service | Select-Object name, status, startmode, startname
+
+name                                            status  startmode startname
+----                                            ------  --------- ---------
+AdobeARMservice                                 OK      Auto      LocalSystem
+AGMService                                      OK      Auto      LocalSystem
+AGSService                                      OK      Auto      LocalSystem
+AJRouter                                        OK      Manual    NT AUTHORITY\Lo...
+ALG                                             OK      Manual    NT AUTHORITY\Lo...
+AppIDSvc                                        OK      Manual    NT Authority\Lo...
+Appinfo                                         OK      Manual    LocalSystem
+AppReadiness                                    OK      Manual    LocalSystem
+AppXSvc                                         OK      Manual    LocalSystem
+AudioEndpointBuilder                            OK      Auto      LocalSystem
+Audiosrv                                        OK      Auto      NT AUTHORITY\Lo...
+autotimesvc                                     OK      Manual    NT AUTHORITY\Lo...
+AxInstSV                                        OK      Manual    LocalSystem
+BDESVC                                          OK      Manual    localSystem
+BFE                                             OK      Auto      NT AUTHORITY\Lo...
+BITS                                            OK      Auto      LocalSystem
+BrcmCardReader                                  OK      Auto      LocalSystem
+BrokerInfrastructure                            OK      Auto      LocalSystem
+Browser                                         OK      Manual    LocalSystem
+BTAGService                                     OK      Manual    NT AUTHORITY\Lo...
+BthAvctpSvc                                     OK      Manual    NT AUTHORITY\Lo...
+bthserv                                         OK      Manual    NT AUTHORITY\Lo...
+camsvc                                          OK      Manual    LocalSystem
+CCDMonitorService                               OK      Auto      LocalSystem
+CDPSvc                                          OK      Auto      NT AUTHORITY\Lo...
+CertPropSvc                                     OK      Manual    LocalSystem
+ClickToRunSvc                                   OK      Auto      LocalSystem
+ClipSVC                                         OK      Manual    LocalSystem
+COMSysApp                                       OK      Manual    LocalSystem
+CoreMessagingRegistrar                          OK      Auto      NT AUTHORITY\Lo...
+cphs                                            OK      Manual    LocalSystem
+CryptSvc                                        OK      Auto      NT Authority\Ne...
+DcomLaunch                                      OK      Auto      LocalSystem
+defragsvc                                       OK      Manual    localSystem
+DeviceAssociationService                        OK      Auto      LocalSystem
+DeviceFastLaneService                           OK      Manual    LocalSystem
+DeviceInstall                                   OK      Manual    LocalSystem
+DevQueryBroker                                  OK      Manual    LocalSystem
+Dhcp                                            OK      Auto      NT Authority\Lo...
+diagnosticshub.standardcollector.service        OK      Manual    LocalSystem
+diagsvc                                         OK      Manual    LocalSystem
+DiagTrack                                       OK      Auto      LocalSystem
+DispBrokerDesktopSvc                            OK      Auto      NT AUTHORITY\Lo...
+DisplayEnhancementService                       OK      Manual    LocalSystem
+DmEnrollmentSvc                                 OK      Manual    LocalSystem
+dmwappushservice                                OK      Manual    LocalSystem
+Dnscache                                        OK      Auto      NT AUTHORITY\Ne...
+DoSvc                                           OK      Auto      NT Authority\Ne...
+dot3svc                                         OK      Manual    localSystem
+DPS                                             OK      Auto      NT AUTHORITY\Lo...
+DsiWMIService                                   OK      Auto      LocalSystem
+DsmSvc                                          OK      Manual    LocalSystem
+DsSvc                                           OK      Manual    LocalSystem
+DusmSvc                                         OK      Auto      NT Authority\Lo...
+Eaphost                                         OK      Manual    localSystem
+EFS                                             OK      Manual    LocalSystem
+EgisTec Ticket Service                          OK      Manual    LocalSystem
+embeddedmode                                    OK      Manual    LocalSystem
+EntAppSvc                                       OK      Manual    LocalSystem
+ePowerSvc                                       OK      Manual    LocalSystem
+EpsonCustomerResearchParticipation              OK      Auto      LocalSystem
+EpsonScanSvc                                    OK      Auto      LocalSystem
+ETDService                                      OK      Auto      LocalSystem
+EventLog                                        OK      Auto      NT AUTHORITY\Lo...
+EventSystem                                     OK      Auto      NT AUTHORITY\Lo...
+Fax                                             OK      Manual    NT AUTHORITY\Ne...
+fdPHost                                         OK      Manual    NT AUTHORITY\Lo...
+FDResPub                                        OK      Manual    NT AUTHORITY\Lo...
+fhsvc                                           OK      Manual    LocalSystem
+FontCache                                       OK      Auto      NT AUTHORITY\Lo...
+FontCache3.0.0.0                                OK      Manual    NT Authority\Lo...
+FrameServer                                     OK      Manual    NT AUTHORITY\Lo...
+GoogleChromeElevationService                    OK      Manual    LocalSystem
+gpsvc                                           OK      Auto      LocalSystem
+GraphicsPerfSvc                                 OK      Manual    LocalSystem
+gupdate                                         OK      Auto      LocalSystem
+gupdatem                                        OK      Manual    LocalSystem
+hidserv                                         OK      Manual    LocalSystem
+HvHost                                          OK      Manual    LocalSystem
+icssvc                                          OK      Manual    NT Authority\Lo...
+igfxCUIService1.0.0.0                           OK      Auto      LocalSystem
+IKEEXT                                          OK      Auto      LocalSystem
+InstallService                                  OK      Manual    LocalSystem
+Intel(R) Capability Licensing Service Interface OK      Auto      LocalSystem
+iphlpsvc                                        OK      Auto      LocalSystem
+IpxlatCfgSvc                                    OK      Manual    LocalSystem
+jhi_service                                     OK      Auto      LocalSystem
+KeyIso                                          OK      Manual    LocalSystem
+KtmRm                                           OK      Manual    NT AUTHORITY\Ne...
+LanmanServer                                    OK      Auto      LocalSystem
+LanmanWorkstation                               OK      Auto      NT AUTHORITY\Ne...
+lfsvc                                           OK      Manual    LocalSystem
+LicenseManager                                  OK      Manual    NT Authority\Lo...
+lltdsvc                                         OK      Manual    NT AUTHORITY\Lo...
+lmhosts                                         OK      Manual    NT AUTHORITY\Lo...
+LMS                                             OK      Auto      LocalSystem
+LSM                                             UNKNOWN Unknown
+LxpSvc                                          OK      Manual    LocalSystem
+MapsBroker                                      OK      Auto      NT AUTHORITY\Ne...
+McAfee WebAdvisor                               OK      Auto      LocalSystem
+mpssvc                                          OK      Auto      NT Authority\Lo...
+MSDTC                                           OK      Manual    NT AUTHORITY\Ne...
+MSiSCSI                                         OK      Manual    LocalSystem
+msiserver                                       OK      Manual    LocalSystem
+NaturalAuthentication                           OK      Manual    LocalSystem
+NcaSvc                                          OK      Manual    LocalSystem
+NcbService                                      OK      Manual    LocalSystem
+NcdAutoSetup                                    OK      Manual    NT AUTHORITY\Lo...
+Netlogon                                        OK      Manual    LocalSystem
+Netman                                          OK      Manual    LocalSystem
+netprofm                                        OK      Manual    NT AUTHORITY\Lo...
+NetSetupSvc                                     UNKNOWN Unknown
+NetTcpPortSharing                               OK      Disabled  NT AUTHORITY\Lo...
+NgcCtnrSvc                                      OK      Manual    NT AUTHORITY\Lo...
+NgcSvc                                          OK      Manual    LocalSystem
+NlaSvc                                          OK      Auto      NT AUTHORITY\Ne...
+nsi                                             OK      Auto      NT Authority\Lo...
+NTI IScheduleSvc                                OK      Auto      LocalSystem
+ose64                                           OK      Manual    LocalSystem
+p2pimsvc                                        OK      Manual    NT AUTHORITY\Lo...
+p2psvc                                          OK      Manual    NT AUTHORITY\Lo...
+PcaSvc                                          OK      Manual    LocalSystem
+perceptionsimulation                            OK      Manual    LocalSystem
+PerfHost                                        OK      Manual    NT AUTHORITY\Lo...
+PhoneSvc                                        OK      Manual    NT Authority\Lo...
+pla                                             OK      Manual    NT AUTHORITY\Lo...
+PlugPlay                                        OK      Manual    LocalSystem
+PNRPAutoReg                                     OK      Manual    NT AUTHORITY\Lo...
+PNRPsvc                                         OK      Manual    NT AUTHORITY\Lo...
+PolicyAgent                                     OK      Manual    NT Authority\Ne...
+Power                                           OK      Auto      LocalSystem
+PrintNotify                                     OK      Manual    LocalSystem
+ProfSvc                                         OK      Auto      LocalSystem
+PushToInstall                                   OK      Manual    LocalSystem
+QWAVE                                           OK      Manual    NT AUTHORITY\Lo...
+RasAuto                                         OK      Manual    localSystem
+RasMan                                          OK      Auto      localSystem
+RemoteAccess                                    OK      Disabled  localSystem
+RemoteRegistry                                  OK      Disabled  NT AUTHORITY\Lo...
+RetailDemo                                      OK      Manual    LocalSystem
+RfButtonDriverService                           OK      Auto      LocalSystem
+RmSvc                                           OK      Manual    NT AUTHORITY\Lo...
+RpcEptMapper                                    OK      Auto      NT AUTHORITY\Ne...
+RpcLocator                                      OK      Manual    NT AUTHORITY\Ne...
+rpcnetp                                         OK      Unknown
+RpcSs                                           OK      Auto      NT AUTHORITY\Ne...
+SamSs                                           OK      Auto      LocalSystem
+SCardSvr                                        OK      Manual    NT AUTHORITY\Lo...
+ScDeviceEnum                                    OK      Manual    LocalSystem
+Schedule                                        OK      Auto      LocalSystem
+SCPolicySvc                                     OK      Manual    LocalSystem
+SDRSVC                                          OK      Manual    localSystem
+seclogon                                        OK      Manual    LocalSystem
+SecurityHealthService                           OK      Manual    LocalSystem
+SEMgrSvc                                        OK      Manual    NT AUTHORITY\Lo...
+SENS                                            OK      Auto      LocalSystem
+SensorDataService                               OK      Manual    LocalSystem
+SensorService                                   OK      Manual    LocalSystem
+SensrSvc                                        OK      Manual    NT AUTHORITY\Lo...
+SessionEnv                                      OK      Manual    localSystem
+SgrmBroker                                      OK      Auto      LocalSystem
+SharedAccess                                    OK      Manual    LocalSystem
+SharedRealitySvc                                OK      Manual    NT AUTHORITY\Lo...
+ShellHWDetection                                OK      Auto      LocalSystem
+shpamsvc                                        OK      Disabled  LocalSystem
+smphost                                         OK      Manual    NT AUTHORITY\Ne...
+SmsRouter                                       OK      Manual    NT Authority\Lo...
+SNMPTRAP                                        OK      Manual    NT AUTHORITY\Lo...
+spectrum                                        OK      Manual    NT AUTHORITY\Lo...
+Spooler                                         OK      Auto      LocalSystem
+sppsvc                                          OK      Auto      NT AUTHORITY\Ne...
+SSDPSRV                                         OK      Manual    NT AUTHORITY\Lo...
+ssh-agent                                       OK      Disabled  LocalSystem
+SstpSvc                                         OK      Manual    NT Authority\Lo...
+ss_conn_service                                 OK      Auto      LocalSystem
+StateRepository                                 OK      Manual    LocalSystem
+stisvc                                          OK      Auto      NT Authority\Lo...
+StorSvc                                         OK      Manual    LocalSystem
+svsvc                                           OK      Manual    LocalSystem
+swprv                                           OK      Manual    LocalSystem
+SysMain                                         OK      Auto      LocalSystem
+SystemEventsBroker                              OK      Auto      LocalSystem
+TabletInputService                              OK      Manual    LocalSystem
+TapiSrv                                         OK      Manual    NT AUTHORITY\Ne...
+TermService                                     OK      Manual    NT Authority\Ne...
+Themes                                          OK      Auto      LocalSystem
+TieringEngineService                            OK      Manual    localSystem
+TimeBrokerSvc                                   OK      Manual    NT AUTHORITY\Lo...
+TokenBroker                                     OK      Manual    LocalSystem
+TrkWks                                          OK      Auto      LocalSystem
+TroubleshootingSvc                              OK      Manual    LocalSystem
+TrustedInstaller                                OK      Manual    localSystem
+tzautoupdate                                    OK      Disabled  NT AUTHORITY\Lo...
+UmRdpService                                    OK      Manual    localSystem
+UNS                                             OK      Auto      LocalSystem
+upnphost                                        OK      Manual    NT AUTHORITY\Lo...
+UserManager                                     OK      Auto      LocalSystem
+UsoSvc                                          OK      Auto      LocalSystem
+VacSvc                                          OK      Manual    NT AUTHORITY\Lo...
+VaultSvc                                        OK      Manual    LocalSystem
+vds                                             OK      Manual    LocalSystem
+vmicguestinterface                              OK      Manual    LocalSystem
+vmicheartbeat                                   OK      Manual    LocalSystem
+vmickvpexchange                                 OK      Manual    LocalSystem
+vmicrdv                                         OK      Manual    LocalSystem
+vmicshutdown                                    OK      Manual    LocalSystem
+vmictimesync                                    OK      Manual    NT AUTHORITY\Lo...
+vmicvmsession                                   OK      Manual    LocalSystem
+vmicvss                                         OK      Manual    LocalSystem
+VSS                                             OK      Manual    LocalSystem
+VSStandardCollectorService150                   OK      Manual    LocalSystem
+W32Time                                         OK      Manual    NT AUTHORITY\Lo...
+WaaSMedicSvc                                    OK      Manual    LocalSystem
+WalletService                                   OK      Manual    LocalSystem
+WarpJITSvc                                      OK      Manual    NT Authority\Lo...
+wbengine                                        OK      Manual    localSystem
+WbioSrvc                                        OK      Manual    LocalSystem
+Wcmsvc                                          OK      Auto      NT Authority\Lo...
+wcncsvc                                         OK      Manual    NT AUTHORITY\Lo...
+WdiServiceHost                                  OK      Manual    NT AUTHORITY\Lo...
+WdiSystemHost                                   OK      Manual    LocalSystem
+WdNisSvc                                        OK      Manual    NT AUTHORITY\Lo...
+WebClient                                       OK      Manual    NT AUTHORITY\Lo...
+Wecsvc                                          OK      Manual    NT AUTHORITY\Ne...
+WEPHOSTSVC                                      OK      Manual    NT AUTHORITY\Lo...
+wercplsupport                                   OK      Manual    localSystem
+WerSvc                                          OK      Manual    localSystem
+WFDSConMgrSvc                                   OK      Manual    NT AUTHORITY\Lo...
+WiaRpc                                          OK      Manual    LocalSystem
+WinDefend                                       OK      Manual    LocalSystem
+WinHttpAutoProxySvc                             OK      Manual    NT AUTHORITY\Lo...
+Winmgmt                                         OK      Auto      localSystem
+WinRM                                           OK      Manual    NT AUTHORITY\Ne...
+wisvc                                           OK      Manual    LocalSystem
+WlanSvc                                         OK      Auto      LocalSystem
+wlidsvc                                         OK      Manual    LocalSystem
+wlpasvc                                         OK      Manual    NT Authority\Lo...
+WManSvc                                         OK      Manual    LocalSystem
+wmiApSrv                                        OK      Manual    localSystem
+WMPNetworkSvc                                   OK      Auto      NT AUTHORITY\Ne...
+workfolderssvc                                  OK      Manual    NT AUTHORITY\Lo...
+WpcMonSvc                                       OK      Manual    LocalSystem
+WPDBusEnum                                      OK      Manual    LocalSystem
+WpnService                                      OK      Auto      LocalSystem
+wscsvc                                          OK      Auto      NT AUTHORITY\Lo...
+WSearch                                         OK      Auto      LocalSystem
+wuauserv                                        OK      Manual    LocalSystem
+WwanSvc                                         OK      Manual    localSystem
+XblAuthManager                                  OK      Manual    LocalSystem
+XblGameSave                                     OK      Manual    LocalSystem
+XboxGipSvc                                      OK      Manual    LocalSystem
+XboxNetApiSvc                                   OK      Manual    LocalSystem
+ZAtheros Wlan Agent                             OK      Auto      LocalSystem
+AVP20.0                                         OK      Auto      LocalSystem
+klvssbridge64_20.0                              OK      Manual    LocalSystem
+KSDE4.0                                         OK      Auto      LocalSystem
+AarSvc_5f9b06e                                  OK      Manual
+BcastDVRUserService_5f9b06e                     OK      Manual
+BluetoothUserService_5f9b06e                    OK      Manual
+CaptureService_5f9b06e                          OK      Manual
+cbdhsvc_5f9b06e                                 OK      Manual
+CDPUserSvc_5f9b06e                              OK      Auto
+ConsentUxUserSvc_5f9b06e                        OK      Manual
+CredentialEnrollmentManagerUserSvc_5f9b06e      OK      Manual
+DeviceAssociationBrokerSvc_5f9b06e              OK      Manual
+DevicePickerUserSvc_5f9b06e                     OK      Manual
+DevicesFlowUserSvc_5f9b06e                      OK      Manual
+MessagingService_5f9b06e                        OK      Manual
+OneSyncSvc_5f9b06e                              OK      Auto
+PimIndexMaintenanceSvc_5f9b06e                  OK      Manual
+PrintWorkflowUserSvc_5f9b06e                    OK      Manual
+UnistoreSvc_5f9b06e                             OK      Manual
+UserDataSvc_5f9b06e                             OK      Manual
+WpnUserService_5f9b06e                          OK      Auto
+
+
+PS C:\Users\Paola Fuentes Caro> Get-CimClass -Namespace root\SecurityCenter2 | where CimClassProperties -Like '*product*'
+
+
+   NameSpace: ROOT/SecurityCenter2
+
+CimClassName                        CimClassMethods      CimClassProperties
+------------                        ---------------      ------------------
+AntiVirusProduct                    {}                   {displayName, instanceGu...
+FirewallProduct                     {}                   {displayName, instanceGu...
+AntiSpywareProduct                  {}                   {displayName, instanceGu...
+
+
+PS C:\Users\Paola Fuentes Caro> Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntiSpywareProduct | ft -Property displayName, productState, timestamp
+
+displayName                      productState timestamp
+-----------                      ------------ ---------
+McAfee Anti-Virus y Anti-Spyware       331776 Mon, 22 Jul 2019 04:18:35 GMT
+Windows Defender                       393472 Thu, 03 Jan 2013 10:02:30 GMT
+
+
+PS C:\Users\Paola Fuentes Caro> Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntiVirusProduct | ft -Property displayName, productState, timestamp
+
+displayName              productState timestamp
+-----------              ------------ ---------
+Windows Defender               393472 Sun, 22 Mar 2020 06:03:17 GMT
+Kaspersky Security Cloud       266240 Sun, 22 Mar 2020 21:03:14 GMT
+
+
+PS C:\Users\Paola Fuentes Caro> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20200324222900
+**********************

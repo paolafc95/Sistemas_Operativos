@@ -1,0 +1,2605 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20200324220844
+Nombre de usuario: TOM\Paola Fuentes Caro
+Usuario RunAs: TOM\Paola Fuentes Caro
+Nombre de la configuración: 
+Máquina: TOM (Microsoft Windows NT 10.0.18362.0)
+Aplicación host: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Id. de proceso: 4044
+PSVersion: 5.1.18362.628
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.628
+BuildVersion: 10.0.18362.628
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Paola Fuentes Caro\Documents\PowerShell_transcript.TOM.MHQCcD+f.20200324220844.txt
+PS C:\Users\Paola Fuentes Caro> Get-Process | ft -AutoSize -Wrap   name, id, responding
+
+Name                                                              Id Responding
+----                                                              -- ----------
+AcrobatNotificationClient                                       7100       True
+acrotray                                                       12452       True
+AdobeCollabSync                                                 1772       True
+AdobeCollabSync                                                 2604       True
+AGMService                                                      2072       True
+AGSService                                                      2188       True
+AppleMobileDeviceProcess                                        5652       True
+ApplicationFrameHost                                            4980       True
+armsvc                                                          2120       True
+Ath_WlanAgent                                                   3580       True
+audiodg                                                         6560       True
+avp                                                             5556       True
+avpui                                                          10064       True
+BackupManagerTray                                              16360       True
+BrcmCardReader                                                  1380       True
+browser_broker                                                  1128       True
+CCDMonitorService                                                524       True
+chrome                                                           400       True
+chrome                                                          2968       True
+chrome                                                          5124       True
+chrome                                                          5144       True
+chrome                                                          5756       True
+chrome                                                          5844       True
+chrome                                                          8988       True
+chrome                                                          9480       True
+chrome                                                          9632       True
+chrome                                                         10320       True
+chrome                                                         13760       True
+chrome                                                         13960       True
+chrome                                                         15596       True
+chrome                                                         15748       True
+chrome                                                         15908       True
+chrome                                                         16540       True
+csrss                                                            584       True
+csrss                                                          14224       True
+ctfmon                                                         16416       True
+dasHost                                                         4032       True
+DataExchangeHost                                                2248       True
+DeviceDetector                                                 10224       True
+dllhost                                                         5352       True
+dllhost                                                        15828       True
+dsiwmis                                                         3192       True
+dwm                                                            15432       True
+EEventManager                                                  16288       True
+EgisUpdate                                                     17260       True
+EPCP                                                            3180       True
+ePowerEvent                                                     1852       True
+ePowerSvc                                                       1624       True
+ePowerTray                                                     14384       True
+escsvc64                                                        3332       True
+ETDCtrl                                                        14092       True
+ETDCtrlHelper                                                   6932       True
+ETDService                                                      3208       True
+ETDTouch                                                        7532       True
+explorer                                                        4120       True
+fontdrvhost                                                      992       True
+fontdrvhost                                                    15084       True
+GoogleCrashHandler                                              7392       True
+GoogleCrashHandler64                                            9024       True
+HeciServer                                                      3232       True
+HxOutlook                                                       6576      False
+HxTsr                                                           9252       True
+Idle                                                               0       True
+igfxCUIService                                                  1820       True
+igfxEM                                                          2900       True
+igfxext                                                        16560       True
+igfxHK                                                         13872       True
+igfxTray                                                         916       True
+IScheduleSvc                                                    3296       True
+iuBrowserIEAgent                                               13032       True
+iuEmailOutlookAgent                                             7616       True
+javaw                                                          17116       True
+Jhi_service                                                     3248       True
+jusched                                                        16008       True
+ksde                                                            5508       True
+ksdeui                                                         15684       True
+LManager                                                         664       True
+LMS                                                             2744       True
+LMutilps32                                                      7940       True
+lsass                                                            824       True
+Memory Compression                                              1648       True
+Microsoft.Photos                                                5892       True
+MicrosoftEdge                                                  11232       True
+MicrosoftEdgeCP                                                 1164       True
+MicrosoftEdgeCP                                                 5620       True
+MicrosoftEdgeCP                                                 9892       True
+MicrosoftEdgeCP                                                13400       True
+MicrosoftEdgeCP                                                14456       True
+MicrosoftEdgeCP                                                14580       True
+MicrosoftEdgeCP                                                14872       True
+MicrosoftEdgeCP                                                15824       True
+MicrosoftEdgeSH                                                 3624       True
+MicrosoftEdgeSH                                                12972       True
+MicrosoftEdgeSH                                                13600       True
+MMDx64Fx                                                       14648       True
+notepad                                                         7876       True
+OfficeClickToRun                                                3080       True
+PmmUpdate                                                      11556       True
+powershell_ise                                                  4044       True
+PresentationFontCache                                           6960       True
+RAVCpl64                                                       10036       True
+Registry                                                          96       True
+RfBtnHelper                                                     4184       True
+RfBtnSvc64                                                      3280       True
+rundll32                                                         980       True
+RuntimeBroker                                                   3364       True
+RuntimeBroker                                                   4288       True
+RuntimeBroker                                                   7852       True
+RuntimeBroker                                                   8256       True
+RuntimeBroker                                                   8384       True
+RuntimeBroker                                                   8908       True
+RuntimeBroker                                                  11304       True
+RuntimeBroker                                                  12804       True
+RuntimeBroker                                                  13456       True
+RuntimeBroker                                                  14372       True
+SearchFilterHost                                                8508       True
+SearchIndexer                                                   3964       True
+SearchProtocolHost                                              5660       True
+SearchProtocolHost                                             10480       True
+SearchUI                                                       12364       True
+SecurityHealthService                                           1760       True
+SecurityHealthSystray                                           7588       True
+services                                                         804       True
+SettingSyncHost                                                 5780       True
+SgrmBroker                                                      1776       True
+ShellExperienceHost                                            10884       True
+sihost                                                          7452       True
+SkypeApp                                                        7516       True
+SkypeBackgroundHost                                            10560       True
+smartscreen                                                     7936       True
+smss                                                             408       True
+spoolsv                                                         2844       True
+SpringToolSuite4                                               12768       True
+ss_conn_service                                                 3320       True
+StartMenuExperienceHost                                        10016       True
+svchost                                                          540       True
+svchost                                                          568       True
+svchost                                                          652       True
+svchost                                                          888       True
+svchost                                                          944       True
+svchost                                                          952       True
+svchost                                                          968       True
+svchost                                                         1144       True
+svchost                                                         1152       True
+svchost                                                         1208       True
+svchost                                                         1240       True
+svchost                                                         1260       True
+svchost                                                         1316       True
+svchost                                                         1372       True
+svchost                                                         1388       True
+svchost                                                         1504       True
+svchost                                                         1580       True
+svchost                                                         1584       True
+svchost                                                         1596       True
+svchost                                                         1688       True
+svchost                                                         1716       True
+svchost                                                         1744       True
+svchost                                                         1796       True
+svchost                                                         1844       True
+svchost                                                         1920       True
+svchost                                                         1968       True
+svchost                                                         2052       True
+svchost                                                         2272       True
+svchost                                                         2300       True
+svchost                                                         2308       True
+svchost                                                         2420       True
+svchost                                                         2436       True
+svchost                                                         2552       True
+svchost                                                         2640       True
+svchost                                                         2668       True
+svchost                                                         2712       True
+svchost                                                         2892       True
+svchost                                                         3020       True
+svchost                                                         3100       True
+svchost                                                         3144       True
+svchost                                                         3204       True
+svchost                                                         3344       True
+svchost                                                         3352       True
+svchost                                                         3376       True
+svchost                                                         3384       True
+svchost                                                         3392       True
+svchost                                                         3400       True
+svchost                                                         3456       True
+svchost                                                         3532       True
+svchost                                                         3588       True
+svchost                                                         3848       True
+svchost                                                         3892       True
+svchost                                                         4220       True
+svchost                                                         4240       True
+svchost                                                         4244       True
+svchost                                                         4264       True
+svchost                                                         4324       True
+svchost                                                         5876       True
+svchost                                                         5904       True
+svchost                                                         6448       True
+svchost                                                         6544       True
+svchost                                                         6636       True
+svchost                                                         6664       True
+svchost                                                         7032       True
+svchost                                                         7044       True
+svchost                                                         7240       True
+svchost                                                         7804       True
+svchost                                                         8336       True
+svchost                                                         8568       True
+svchost                                                         8728       True
+svchost                                                         8884       True
+svchost                                                         9508       True
+svchost                                                        10468       True
+svchost                                                        10536       True
+svchost                                                        10668       True
+svchost                                                        11812       True
+svchost                                                        11960       True
+svchost                                                        12880       True
+svchost                                                        13500       True
+svchost                                                        13792       True
+svchost                                                        14468       True
+svchost                                                        15176       True
+svchost                                                        15356       True
+svchost                                                        16564       True
+System                                                             4       True
+SystemSettings                                                 12692      False
+SystemSettingsBroker                                           10456       True
+TabTip                                                          9704       True
+taskhostw                                                       1192       True
+UNS                                                             4468       True
+unsecapp                                                        2740       True
+unsecapp                                                        4620       True
+unsecapp                                                       16512       True
+WindowsInternal.ComposableShell.Experiences.TextInput.InputApp 13168       True
+wininit                                                          684       True
+winlogon                                                       15056       True
+WinStore.App                                                   10788      False
+WmiPrvSE                                                        1300       True
+WmiPrvSE                                                        4660       True
+WmiPrvSE                                                        4836       True
+wmpnetwk                                                        5544       True
+WWAHost                                                        13964      False
+YourPhoneServer                                                16760       True
+Zoom                                                           16736       True
+Zoom                                                           17104       True
+
+
+PS C:\Users\Paola Fuentes Caro> Get-Process |ft name, id, @{n='VM (MB)'; e={$_.VM / 1MB -as [int]}}, @{n='PM (MB)'; e={$_.pm / 1MB -as [int]}}
+
+Name                                                              Id VM (MB) PM (MB)
+----                                                              -- ------- -------
+AcrobatNotificationClient                                       7100     191      10
+acrotray                                                       12452     149       4
+AdobeCollabSync                                                 1772     185      20
+AdobeCollabSync                                                 2604     152       4
+AGMService                                                      2072      61       3
+AGSService                                                      2188      67       4
+AppleMobileDeviceProcess                                        5652    4273       4
+ApplicationFrameHost                                            4980 2101521      32
+armsvc                                                          2120      43       1
+Ath_WlanAgent                                                   3580      36       1
+audiodg                                                         6560 2101381      24
+avp                                                             5556     844     296
+avpui                                                          10064     357      76
+BackupManagerTray                                              16360      87       3
+BrcmCardReader                                                  1380    4163       2
+browser_broker                                                  1128 2134208       9
+CCDMonitorService                                                524      54       2
+chrome                                                           400 2105724      38
+chrome                                                          2968 2105791      51
+chrome                                                          5124 2105750      96
+chrome                                                          5144 2101565       7
+chrome                                                          5756 2105763      53
+chrome                                                          5844 2101384       3
+chrome                                                          8988 2105701      18
+chrome                                                          9480 2105762      54
+chrome                                                          9632 2102152     145
+chrome                                                         10320 2105819      71
+chrome                                                         13760 2106057     302
+chrome                                                         13960 2101420       3
+chrome                                                         15596 2105832      69
+chrome                                                         15748 2102103     267
+chrome                                                         15908 2101670      27
+chrome                                                         16540 2105684      13
+csrss                                                            584 2101343       2
+csrss                                                          14224 2101346       2
+ctfmon                                                         16416 2101419       7
+dasHost                                                         4032 2101352       7
+DataExchangeHost                                                2248 2101417       5
+DeviceDetector                                                 10224     107       3
+dllhost                                                         5352 2101404       3
+dllhost                                                        15828 2101450      12
+dsiwmis                                                         3192      48       3
+dwm                                                            15432 2101659      80
+EEventManager                                                  16288      89       4
+EgisUpdate                                                     17260    4232       4
+EPCP                                                            3180    4216       8
+ePowerEvent                                                     1852    4227       2
+ePowerSvc                                                       1624    4195       3
+ePowerTray                                                     14384    4224       3
+escsvc64                                                        3332    4182       2
+ETDCtrl                                                        14092    4252       5
+ETDCtrlHelper                                                   6932    4212       3
+ETDService                                                      3208    4164       2
+ETDTouch                                                        7532    4205       2
+explorer                                                        4120 2102060     106
+fontdrvhost                                                      992 2101316       2
+fontdrvhost                                                    15084 2101507       7
+GoogleCrashHandler                                              7392      48       2
+GoogleCrashHandler64                                            9024    4182       2
+HeciServer                                                      3232    4182       2
+HxOutlook                                                       6576 2101788      38
+HxTsr                                                           9252 2101473      12
+Idle                                                               0       0       0
+igfxCUIService                                                  1820    4178       2
+igfxEM                                                          2900    4239       8
+igfxext                                                        16560    4207       2
+igfxHK                                                         13872    4222       7
+igfxTray                                                         916    4241      13
+IScheduleSvc                                                    3296      95       7
+iuBrowserIEAgent                                               13032     192      12
+iuEmailOutlookAgent                                             7616     191      13
+javaw                                                          17116    6640     180
+Jhi_service                                                     3248      36       1
+jusched                                                        16008      72       2
+ksde                                                            5508     163      28
+ksdeui                                                         15684      95       7
+LManager                                                         664     108       4
+LMS                                                             2744      36       3
+LMutilps32                                                      7940      81       7
+lsass                                                            824 2101373      11
+Memory Compression                                              1648     746       2
+Microsoft.Photos                                                5892    4940      49
+MicrosoftEdge                                                  11232 2101801      72
+MicrosoftEdgeCP                                                 1164 2134221       6
+MicrosoftEdgeCP                                                 5620 2134634      34
+MicrosoftEdgeCP                                                 9892 2134652      54
+MicrosoftEdgeCP                                                13400 2134955     241
+MicrosoftEdgeCP                                                14456 2135023     255
+MicrosoftEdgeCP                                                14580 2134813     138
+MicrosoftEdgeCP                                                14872 2134221       6
+MicrosoftEdgeCP                                                15824 2135425     386
+MicrosoftEdgeSH                                                 3624 2134192       8
+MicrosoftEdgeSH                                                12972 2134280      16
+MicrosoftEdgeSH                                                13600 2134307      20
+MMDx64Fx                                                       14648    4221       2
+notepad                                                         7876 2101486      11
+OfficeClickToRun                                                3080    4349      35
+PmmUpdate                                                      11556    4238       3
+powershell_ise                                                  4044    5224     169
+PresentationFontCache                                           6960    4643      24
+RAVCpl64                                                       10036    4247       5
+Registry                                                          96     136      10
+RfBtnHelper                                                     4184      82       2
+RfBtnSvc64                                                      3280    4174       2
+rundll32                                                         980 2101365       2
+RuntimeBroker                                                   3364 2101441       9
+RuntimeBroker                                                   4288 2101505      15
+RuntimeBroker                                                   7852 2101468       5
+RuntimeBroker                                                   8256 2101382       3
+RuntimeBroker                                                   8384 2101441      10
+RuntimeBroker                                                   8908 2101511      13
+RuntimeBroker                                                  11304 2101409       5
+RuntimeBroker                                                  12804 2101412       5
+RuntimeBroker                                                  13456 2101389       4
+RuntimeBroker                                                  14372 2101399       6
+SearchFilterHost                                                8508 2101315       1
+SearchIndexer                                                   3964 2101567      72
+SearchProtocolHost                                              5660 2101350       2
+SearchProtocolHost                                             10480 2101342       3
+SearchUI                                                       12364 2134912      92
+SecurityHealthService                                           1760 2101359       5
+SecurityHealthSystray                                           7588 2101362       2
+services                                                         804 2101311       6
+SettingSyncHost                                                 5780 2101456      14
+SgrmBroker                                                      1776 2101304       3
+ShellExperienceHost                                            10884 2101686      46
+sihost                                                          7452 2101441      12
+SkypeApp                                                        7516   38126     194
+SkypeBackgroundHost                                            10560 2101348       2
+smartscreen                                                     7936 2134733      20
+smss                                                             408 2101288       1
+spoolsv                                                         2844 2101368       7
+SpringToolSuite4                                               12768    6971     572
+ss_conn_service                                                 3320      50       2
+StartMenuExperienceHost                                        10016 2101608      30
+svchost                                                          540 2101354      12
+svchost                                                          568 2101469      10
+svchost                                                          652 2101326       3
+svchost                                                          888 2101320       2
+svchost                                                          944 2101303       1
+svchost                                                          952 2101324       2
+svchost                                                          968 2101415      18
+svchost                                                         1144 2101330       3
+svchost                                                         1152 2101330       3
+svchost                                                         1208 2101354       4
+svchost                                                         1240 2101330       2
+svchost                                                         1260 2101321       2
+svchost                                                         1316 2101325       2
+svchost                                                         1372 2101328       3
+svchost                                                         1388 2101351       7
+svchost                                                         1504 2101356      15
+svchost                                                         1580 2101316       1
+svchost                                                         1584 2105522      89
+svchost                                                         1596 2101323       2
+svchost                                                         1688 2101324       8
+svchost                                                         1716 2101330       2
+svchost                                                         1744 2101319       2
+svchost                                                         1796 2101348       5
+svchost                                                         1844 2101321       2
+svchost                                                         1920 2101353       2
+svchost                                                         1968 2101331       4
+svchost                                                         2052 2101326       4
+svchost                                                         2272 2101346       9
+svchost                                                         2300 2101330       3
+svchost                                                         2308 2101316       2
+svchost                                                         2420 2101356       3
+svchost                                                         2436 2101369       4
+svchost                                                         2552 2101324       2
+svchost                                                         2640 2101369       7
+svchost                                                         2668 2101315       1
+svchost                                                         2712 2101350       3
+svchost                                                         2892 2101370      12
+svchost                                                         3020 2101323       2
+svchost                                                         3100 2101426       5
+svchost                                                         3144 2101320       2
+svchost                                                         3204 2101346       4
+svchost                                                         3344 2101329       2
+svchost                                                         3352 2101338       3
+svchost                                                         3376 2101385      11
+svchost                                                         3384 2101493      38
+svchost                                                         3392 2101417      20
+svchost                                                         3400 2101322       3
+svchost                                                         3456 2101313       1
+svchost                                                         3532 2101376       5
+svchost                                                         3588 2101317       2
+svchost                                                         3848 2101336       4
+svchost                                                         3892 2101313       1
+svchost                                                         4220 2101329       3
+svchost                                                         4240 2101531       8
+svchost                                                         4244 2101349       4
+svchost                                                         4264 2101326       2
+svchost                                                         4324 2101347       3
+svchost                                                         5876 2101319       2
+svchost                                                         5904 2101325       2
+svchost                                                         6448 2101338       3
+svchost                                                         6544 2101316       2
+svchost                                                         6636 2101329       2
+svchost                                                         6664 2101370       6
+svchost                                                         7032 2101325       2
+svchost                                                         7044 2101350       5
+svchost                                                         7240 2101394       5
+svchost                                                         7804 2101318       2
+svchost                                                         8336 2101341       3
+svchost                                                         8568 2101351       4
+svchost                                                         8728 2101333       3
+svchost                                                         8884 2101365       6
+svchost                                                         9508 2101376       8
+svchost                                                        10468 2101319       2
+svchost                                                        10536 2101320       2
+svchost                                                        10668 2101342       4
+svchost                                                        11812 2101467       7
+svchost                                                        11960 2101640      40
+svchost                                                        12880 2101320       2
+svchost                                                        13500 2101458      11
+svchost                                                        13792 2101441       5
+svchost                                                        14468 2101342       3
+svchost                                                        15176 2101322       2
+svchost                                                        15356 2101333       2
+svchost                                                        16564 2101392      11
+System                                                             4      18       0
+SystemSettings                                                 12692 2101651      24
+SystemSettingsBroker                                           10456 2101453       8
+TabTip                                                          9704 2101405       4
+taskhostw                                                       1192 2101473      16
+UNS                                                             4468      64       4
+unsecapp                                                        2740 2101364       3
+unsecapp                                                        4620 2101318       2
+unsecapp                                                       16512 2101364       2
+WindowsInternal.ComposableShell.Experiences.TextInput.InputApp 13168 2101513      14
+wininit                                                          684 2101314       2
+winlogon                                                       15056 2101346       3
+WinStore.App                                                   10788    4946      49
+WmiPrvSE                                                        1300      72       4
+WmiPrvSE                                                        4660 2101370      15
+WmiPrvSE                                                        4836 2101356       9
+wmpnetwk                                                        5544 2101419       9
+WWAHost                                                        13964 2134899      86
+YourPhoneServer                                                16760 2101383       4
+Zoom                                                           16736     401      64
+Zoom                                                           17104     291      60
+
+
+PS C:\Users\Paola Fuentes Caro> Get-EventLog -List 
+
+  Max(K) Retain OverflowAction        Entries Log
+  ------ ------ --------------        ------- ---
+  20.480      0 OverwriteAsNeeded      11.242 Application
+  20.480      0 OverwriteAsNeeded           0 HardwareEvents
+     512      7 OverwriteOlder              0 Internet Explorer
+     512      7 OverwriteOlder              0 Kaspersky Event Log
+  20.480      0 OverwriteAsNeeded           0 Key Management Service
+     128      0 OverwriteAsNeeded          58 OAlerts
+                                              Security
+  20.480      0 OverwriteAsNeeded      24.692 System
+  15.360      0 OverwriteAsNeeded         816 Windows PowerShell
+
+
+PS C:\Users\Paola Fuentes Caro> Get-EventLog -lis | fl @{n='NombreLog';e={$_.LogDisplayName}}, @{n='Per-Retencion';e={$_.retain}}
+
+
+NombreLog     : Aplicación
+Per-Retencion :
+
+NombreLog     : Eventos de hardware
+Per-Retencion :
+
+NombreLog     : Internet Explorer
+Per-Retencion :
+
+NombreLog     : Kaspersky Event Log
+Per-Retencion :
+
+NombreLog     : Servicio de administración de claves
+Per-Retencion :
+
+NombreLog     : Microsoft Office Alerts
+Per-Retencion :
+
+NombreLog     :
+Per-Retencion :
+
+NombreLog     : Sistema
+Per-Retencion :
+
+NombreLog     : Windows PowerShell
+Per-Retencion :
+
+
+
+PS C:\Users\Paola Fuentes Caro> dir | fw -column 4
+
+
+    Directorio: C:\Users\Paola Fuentes Caro
+
+
+
+.anaconda             .conda               .config              .eclipse
+.idlerc               .ipython             .jupyter             .m2
+.matplotlib           .p2                  .sts4                .tooling
+.webclipse            3D Objects           Anaconda3            Apple
+Application Data      CmapToolsLogs        Contacts             Creative Cloud Files
+Desktop               Documents            Downloads            eclipse
+eclipse-workspace     Favorites            git                  Links
+Music                 OneDrive             Pictures             Saved Games
+Searches              source               Videos               Xilinx
+.bash_history         .condarc             .gitconfig           Sti_Trace.log
+
+
+PS C:\Users\Paola Fuentes Caro> Get-ChildItem -Path C:\Windows -Filter *.exe|fl -Property @{n='Nombre';e={$_.Name}},@{n='Tamaño';e={$_.Length / 1KB -as [int]}},@{n='Versión';e={$_.VersionInfo.FileVersion}}
+
+
+Nombre  : bfsvc.exe
+Tamaño  : 72
+Versión : 10.0.18362.718 (WinBuild.160101.0800)
+
+Nombre  : explorer.exe
+Tamaño  : 4514
+Versión : 10.0.18362.718 (WinBuild.160101.0800)
+
+Nombre  : HelpPane.exe
+Tamaño  : 1035
+Versión : 10.0.18362.718 (WinBuild.160101.0800)
+
+Nombre  : hh.exe
+Tamaño  : 18
+Versión : 10.0.18362.718 (WinBuild.160101.0800)
+
+Nombre  : notepad.exe
+Tamaño  : 177
+Versión : 10.0.18362.1 (WinBuild.160101.0800)
+
+Nombre  : py.exe
+Tamaño  : 887
+Versión : 3.7.4
+
+Nombre  : pyw.exe
+Tamaño  : 887
+Versión : 3.7.4
+
+Nombre  : regedit.exe
+Tamaño  : 350
+Versión : 10.0.18362.718 (WinBuild.160101.0800)
+
+Nombre  : RfBtnSvc64.exe
+Tamaño  : 95
+Versión : 1, 5, 8, 30
+
+Nombre  : splwow64.exe
+Tamaño  : 130
+Versión : 10.0.18362.476 (WinBuild.160101.0800)
+
+Nombre  : UNINSTLMv7.EXE
+Tamaño  : 277
+Versión : 2, 7, 11, 9
+
+Nombre  : UnInstRfBtn.EXE
+Tamaño  : 278
+Versión : 2, 6, 4, 20
+
+Nombre  : winhlp32.exe
+Tamaño  : 12
+Versión : 10.0.18362.718 (WinBuild.160101.0800)
+
+Nombre  : write.exe
+Tamaño  : 11
+Versión : 10.0.18362.1 (WinBuild.160101.0800)
+
+
+
+PS C:\Users\Paola Fuentes Caro> Get-NetAdapter | Where-Object {$_.Virtual -eq '$false'}
+
+Name                      InterfaceDescription                    ifIndex Status
+----                      --------------------                    ------- ------
+Ethernet 3                Kaspersky Security Data Escort Adapter       62 Disconn...
+
+
+PS C:\Users\Paola Fuentes Caro> Get-DnsClientCache -Type A
+
+Entry                     RecordName                Record Status    Section TimeTo
+                                                    Type                     Live
+-----                     ----------                ------ ------    ------- ------
+safebrowsing.googleapi... safebrowsing.googleapi... A      Success   Answer      42
+r8---sn-0ox-cvbl.googl... r8.sn-0ox-cvbl.googlev... A      Success   Answer     441
+r3---sn-h5q7rn7l.googl... r3.sn-h5q7rn7l.googlev... A      Success   Answer     551
+array506.prod.do.dsp.m... array506.prod.do.dsp.m... A      Success   Answer     301
+www.genuitec.com          portal.genuitec.com       A      Success   Answer    6822
+zoomva3193414mmr.zoom.us  zoomva3193414mmr.zoom.us  A      Success   Answer   59299
+zoomva317170178mmr.zoo... zoomva317170178mmr.zoo... A      Success   Answer   47976
+www.youtube.com           youtube-ui.l.google.com   A      Success   Answer      54
+www.youtube.com           youtube-ui.l.google.com   A      Success   Answer      54
+www.youtube.com           youtube-ui.l.google.com   A      Success   Answer      54
+www.youtube.com           youtube-ui.l.google.com   A      Success   Answer      54
+i.ytimg.com               i.ytimg.com               A      Success   Answer      33
+zoomva3132146136mmr.zo... zoomva3132146136mmr.zo... A      Success   Answer   57894
+array503.prod.do.dsp.m... array503.prod.do.dsp.m... A      Success   Answer     429
+ssl.gstatic.com           ssl.gstatic.com           A      Success   Answer     209
+beacons.gcp.gvt2.com      beacons-handoff.gcp.gv... A      Success   Answer      34
+r6---sn-0ox-cvbl.googl... r6.sn-0ox-cvbl.googlev... A      Success   Answer     231
+www.aconvert.com          aconvert.com              A      Success   Answer    3479
+www.icesi.edu.co          webcache.icesi.edu.co     A      Success   Answer   22689
+www.icesi.edu.co          webcache.icesi.edu.co     A      Success   Answer   22689
+geo.prod.do.dsp.mp.mic... array608-prod.do.dsp.m... A      Success   Answer     281
+zoomva31810085mmr.zoom.us zoomva31810085mmr.zoom.us A      Success   Answer   52676
+dc1-st.ksn.kaspersky-l... ksn-dc1-st.geoksn.kasp... A      Success   Answer     467
+dc1-st.ksn.kaspersky-l... ksn-dc1-st.geoksn.kasp... A      Success   Answer     467
+polyfill.io               polyfill.io               A      Success   Answer    3363
+polyfill.io               polyfill.io               A      Success   Answer    3363
+polyfill.io               polyfill.io               A      Success   Answer    3363
+polyfill.io               polyfill.io               A      Success   Answer    3363
+markdown.es               markdown.es               A      Success   Answer   13155
+r1---sn-0ox-cvbl.googl... r1.sn-0ox-cvbl.googlev... A      Success   Answer     229
+stats.wp.com              stats.wp.com              A      Success   Answer    1083
+marketplace.eclipse.org   marketplace.eclipse.org   A      Success   Answer   25959
+r7---sn-0ox-cvbl.googl... r7.sn-0ox-cvbl.googlev... A      Success   Answer     795
+zoomva523203200mmr.zoo... zoomva523203200mmr.zoo... A      Success   Answer   64587
+zoomca15810111121mmr.z... zoomca15810111121mmr.z... A      Success   Answer   56961
+array507.prod.do.dsp.m... array507.prod.do.dsp.m... A      Success   Answer     170
+yt3.ggpht.com             photos-ugc.l.googleuse... A      Success   Answer     118
+pixel.wp.com              pixel.wp.com              A      Success   Answer    1960
+r3---sn-0ox-cvbl.googl... r3.sn-0ox-cvbl.googlev... A      Success   Answer     523
+zoomva321131116mmr.zoo... zoomva321131116mmr.zoo... A      Success   Answer   59067
+github.githubassets.com   github.githubassets.com   A      Success   Answer    1334
+github.githubassets.com   github.githubassets.com   A      Success   Answer    1334
+github.githubassets.com   github.githubassets.com   A      Success   Answer    1334
+github.githubassets.com   github.githubassets.com   A      Success   Answer    1334
+docs.google.com           docs.google.com           A      Success   Answer     227
+
+
+PS C:\Users\Paola Fuentes Caro> Get-DnsClientCache -Type AAAA
+Get-DnsClientCache : No se encontraron objetos MSFT_DNSClientCache cuya propiedad 'Type' sea igual a 'AAAA'. Compruebe 
+el valor de la propiedad e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ Get-DnsClientCache -Type AAAA
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (AAAA:Type) [Get-DnsClientCache], CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_Type,Get-DnsClientCache
+Get-DnsClientCache : No se encontraron objetos MSFT_DNSClientCache cuya propiedad
+'Type' sea igual a 'AAAA'. Compruebe el valor de la propiedad e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ Get-DnsClientCache -Type AAAA
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (AAAA:Type) [Get-DnsClientCache], Cim
+   JobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_Type,Get-DnsClientCache
+
+PS C:\Users\Paola Fuentes Caro> Get-ChildItem -Path C:\Windows\System32 -Filter *.exe|fl -Property @{n='Nombre';e={$_.Name}},@{n='Tamaño';e={$_.Length /5MB -as [int]}}
+
+
+Nombre : agentactivationruntimestarter.exe
+Tamaño : 0
+
+Nombre : aitstatic.exe
+Tamaño : 1
+
+Nombre : alg.exe
+Tamaño : 0
+
+Nombre : AppHostRegistrationVerifier.exe
+Tamaño : 0
+
+Nombre : appidcertstorecheck.exe
+Tamaño : 0
+
+Nombre : appidpolicyconverter.exe
+Tamaño : 0
+
+Nombre : appidtel.exe
+Tamaño : 0
+
+Nombre : ApplicationFrameHost.exe
+Tamaño : 0
+
+Nombre : ApplyTrustOffline.exe
+Tamaño : 0
+
+Nombre : ApproveChildRequest.exe
+Tamaño : 0
+
+Nombre : ARP.EXE
+Tamaño : 0
+
+Nombre : at.exe
+Tamaño : 0
+
+Nombre : AtBroker.exe
+Tamaño : 0
+
+Nombre : attrib.exe
+Tamaño : 0
+
+Nombre : audiodg.exe
+Tamaño : 0
+
+Nombre : auditpol.exe
+Tamaño : 0
+
+Nombre : AuthHost.exe
+Tamaño : 0
+
+Nombre : autochk.exe
+Tamaño : 0
+
+Nombre : autoconv.exe
+Tamaño : 0
+
+Nombre : autofmt.exe
+Tamaño : 0
+
+Nombre : AxInstUI.exe
+Tamaño : 0
+
+Nombre : backgroundTaskHost.exe
+Tamaño : 0
+
+Nombre : BackgroundTransferHost.exe
+Tamaño : 0
+
+Nombre : bcdboot.exe
+Tamaño : 0
+
+Nombre : bcdedit.exe
+Tamaño : 0
+
+Nombre : BdeUISrv.exe
+Tamaño : 0
+
+Nombre : bdeunlock.exe
+Tamaño : 0
+
+Nombre : BioIso.exe
+Tamaño : 0
+
+Nombre : BitLockerDeviceEncryption.exe
+Tamaño : 0
+
+Nombre : BitLockerWizardElev.exe
+Tamaño : 0
+
+Nombre : bitsadmin.exe
+Tamaño : 0
+
+Nombre : bootcfg.exe
+Tamaño : 0
+
+Nombre : bootim.exe
+Tamaño : 0
+
+Nombre : bootsect.exe
+Tamaño : 0
+
+Nombre : bridgeunattend.exe
+Tamaño : 0
+
+Nombre : browserexport.exe
+Tamaño : 0
+
+Nombre : browser_broker.exe
+Tamaño : 0
+
+Nombre : bthudtask.exe
+Tamaño : 0
+
+Nombre : ByteCodeGenerator.exe
+Tamaño : 0
+
+Nombre : cacls.exe
+Tamaño : 0
+
+Nombre : calc.exe
+Tamaño : 0
+
+Nombre : CameraSettingsUIHost.exe
+Tamaño : 0
+
+Nombre : CastSrv.exe
+Tamaño : 0
+
+Nombre : CertEnrollCtrl.exe
+Tamaño : 0
+
+Nombre : certreq.exe
+Tamaño : 0
+
+Nombre : certutil.exe
+Tamaño : 0
+
+Nombre : changepk.exe
+Tamaño : 0
+
+Nombre : charmap.exe
+Tamaño : 0
+
+Nombre : CheckNetIsolation.exe
+Tamaño : 0
+
+Nombre : chkdsk.exe
+Tamaño : 0
+
+Nombre : chkntfs.exe
+Tamaño : 0
+
+Nombre : choice.exe
+Tamaño : 0
+
+Nombre : CIDiag.exe
+Tamaño : 0
+
+Nombre : cipher.exe
+Tamaño : 0
+
+Nombre : cleanmgr.exe
+Tamaño : 0
+
+Nombre : cliconfg.exe
+Tamaño : 0
+
+Nombre : clip.exe
+Tamaño : 0
+
+Nombre : ClipRenew.exe
+Tamaño : 0
+
+Nombre : ClipUp.exe
+Tamaño : 0
+
+Nombre : CloudExperienceHostBroker.exe
+Tamaño : 0
+
+Nombre : CloudNotifications.exe
+Tamaño : 0
+
+Nombre : cmd.exe
+Tamaño : 0
+
+Nombre : cmdkey.exe
+Tamaño : 0
+
+Nombre : cmdl32.exe
+Tamaño : 0
+
+Nombre : cmmon32.exe
+Tamaño : 0
+
+Nombre : cmstp.exe
+Tamaño : 0
+
+Nombre : cofire.exe
+Tamaño : 0
+
+Nombre : colorcpl.exe
+Tamaño : 0
+
+Nombre : comp.exe
+Tamaño : 0
+
+Nombre : compact.exe
+Tamaño : 0
+
+Nombre : CompatTelRunner.exe
+Tamaño : 0
+
+Nombre : CompMgmtLauncher.exe
+Tamaño : 0
+
+Nombre : CompPkgSrv.exe
+Tamaño : 0
+
+Nombre : ComputerDefaults.exe
+Tamaño : 0
+
+Nombre : conhost.exe
+Tamaño : 0
+
+Nombre : consent.exe
+Tamaño : 0
+
+Nombre : control.exe
+Tamaño : 0
+
+Nombre : convert.exe
+Tamaño : 0
+
+Nombre : convertvhd.exe
+Tamaño : 0
+
+Nombre : coredpussvr.exe
+Tamaño : 0
+
+Nombre : CredentialEnrollmentManager.exe
+Tamaño : 0
+
+Nombre : CredentialUIBroker.exe
+Tamaño : 0
+
+Nombre : credwiz.exe
+Tamaño : 0
+
+Nombre : cscript.exe
+Tamaño : 0
+
+Nombre : csrss.exe
+Tamaño : 0
+
+Nombre : ctfmon.exe
+Tamaño : 0
+
+Nombre : cttune.exe
+Tamaño : 0
+
+Nombre : cttunesvr.exe
+Tamaño : 0
+
+Nombre : curl.exe
+Tamaño : 0
+
+Nombre : CustomInstallExec.exe
+Tamaño : 0
+
+Nombre : CustomModeApp.exe
+Tamaño : 0
+
+Nombre : CustomModeAppv2_0.exe
+Tamaño : 0
+
+Nombre : dasHost.exe
+Tamaño : 0
+
+Nombre : DataExchangeHost.exe
+Tamaño : 0
+
+Nombre : DataStoreCacheDumpTool.exe
+Tamaño : 0
+
+Nombre : DataUsageLiveTileTask.exe
+Tamaño : 0
+
+Nombre : dccw.exe
+Tamaño : 0
+
+Nombre : dcomcnfg.exe
+Tamaño : 0
+
+Nombre : ddodiag.exe
+Tamaño : 0
+
+Nombre : Defrag.exe
+Tamaño : 0
+
+Nombre : deploymentcsphelper.exe
+Tamaño : 0
+
+Nombre : desktopimgdownldr.exe
+Tamaño : 0
+
+Nombre : DeviceCensus.exe
+Tamaño : 0
+
+Nombre : DeviceCredentialDeployment.exe
+Tamaño : 0
+
+Nombre : DeviceEject.exe
+Tamaño : 0
+
+Nombre : DeviceEnroller.exe
+Tamaño : 0
+
+Nombre : DevicePairingWizard.exe
+Tamaño : 0
+
+Nombre : DeviceProperties.exe
+Tamaño : 0
+
+Nombre : DFDWiz.exe
+Tamaño : 0
+
+Nombre : dfrgui.exe
+Tamaño : 0
+
+Nombre : dialer.exe
+Tamaño : 0
+
+Nombre : difx64.exe
+Tamaño : 0
+
+Nombre : directxdatabaseupdater.exe
+Tamaño : 0
+
+Nombre : diskpart.exe
+Tamaño : 0
+
+Nombre : diskperf.exe
+Tamaño : 0
+
+Nombre : diskraid.exe
+Tamaño : 0
+
+Nombre : DiskSnapshot.exe
+Tamaño : 0
+
+Nombre : Dism.exe
+Tamaño : 0
+
+Nombre : dispdiag.exe
+Tamaño : 0
+
+Nombre : DisplaySwitch.exe
+Tamaño : 0
+
+Nombre : djoin.exe
+Tamaño : 0
+
+Nombre : dllhost.exe
+Tamaño : 0
+
+Nombre : dllhst3g.exe
+Tamaño : 0
+
+Nombre : dmcertinst.exe
+Tamaño : 0
+
+Nombre : dmcfghost.exe
+Tamaño : 0
+
+Nombre : dmclient.exe
+Tamaño : 0
+
+Nombre : DmNotificationBroker.exe
+Tamaño : 0
+
+Nombre : DmOmaCpMo.exe
+Tamaño : 0
+
+Nombre : dnscacheugc.exe
+Tamaño : 0
+
+Nombre : doskey.exe
+Tamaño : 0
+
+Nombre : dpapimig.exe
+Tamaño : 0
+
+Nombre : DpiScaling.exe
+Tamaño : 0
+
+Nombre : dpnsvr.exe
+Tamaño : 0
+
+Nombre : DPTopologyApp.exe
+Tamaño : 0
+
+Nombre : DPTopologyAppv2_0.exe
+Tamaño : 0
+
+Nombre : driverquery.exe
+Tamaño : 0
+
+Nombre : drvcfg.exe
+Tamaño : 0
+
+Nombre : drvinst.exe
+Tamaño : 0
+
+Nombre : DsmUserTask.exe
+Tamaño : 0
+
+Nombre : dsregcmd.exe
+Tamaño : 0
+
+Nombre : dstokenclean.exe
+Tamaño : 0
+
+Nombre : DTUHandler.exe
+Tamaño : 0
+
+Nombre : dusmtask.exe
+Tamaño : 0
+
+Nombre : dvdplay.exe
+Tamaño : 0
+
+Nombre : dwm.exe
+Tamaño : 0
+
+Nombre : DWWIN.EXE
+Tamaño : 0
+
+Nombre : dxdiag.exe
+Tamaño : 0
+
+Nombre : dxgiadaptercache.exe
+Tamaño : 0
+
+Nombre : Dxpserver.exe
+Tamaño : 0
+
+Nombre : Eap3Host.exe
+Tamaño : 0
+
+Nombre : EaseOfAccessDialog.exe
+Tamaño : 0
+
+Nombre : easinvoker.exe
+Tamaño : 0
+
+Nombre : EASPolicyManagerBrokerHost.exe
+Tamaño : 0
+
+Nombre : EDPCleanup.exe
+Tamaño : 0
+
+Nombre : edpnotify.exe
+Tamaño : 0
+
+Nombre : EduPrintProv.exe
+Tamaño : 0
+
+Nombre : efsui.exe
+Tamaño : 0
+
+Nombre : EhStorAuthn.exe
+Tamaño : 0
+
+Nombre : escsvc64.exe
+Tamaño : 0
+
+Nombre : esentutl.exe
+Tamaño : 0
+
+Nombre : eudcedit.exe
+Tamaño : 0
+
+Nombre : eventcreate.exe
+Tamaño : 0
+
+Nombre : eventvwr.exe
+Tamaño : 0
+
+Nombre : expand.exe
+Tamaño : 0
+
+Nombre : extrac32.exe
+Tamaño : 0
+
+Nombre : fc.exe
+Tamaño : 0
+
+Nombre : fhmanagew.exe
+Tamaño : 0
+
+Nombre : FileHistory.exe
+Tamaño : 0
+
+Nombre : find.exe
+Tamaño : 0
+
+Nombre : findstr.exe
+Tamaño : 0
+
+Nombre : finger.exe
+Tamaño : 0
+
+Nombre : fixmapi.exe
+Tamaño : 0
+
+Nombre : fltMC.exe
+Tamaño : 0
+
+Nombre : fodhelper.exe
+Tamaño : 0
+
+Nombre : Fondue.exe
+Tamaño : 0
+
+Nombre : fontdrvhost.exe
+Tamaño : 0
+
+Nombre : fontview.exe
+Tamaño : 0
+
+Nombre : forfiles.exe
+Tamaño : 0
+
+Nombre : fsavailux.exe
+Tamaño : 0
+
+Nombre : FsIso.exe
+Tamaño : 0
+
+Nombre : fsquirt.exe
+Tamaño : 0
+
+Nombre : fsutil.exe
+Tamaño : 0
+
+Nombre : ftp.exe
+Tamaño : 0
+
+Nombre : fvenotify.exe
+Tamaño : 0
+
+Nombre : FXSCOVER.exe
+Tamaño : 0
+
+Nombre : FXSSVC.exe
+Tamaño : 0
+
+Nombre : FXSUNATD.exe
+Tamaño : 0
+
+Nombre : GameBarPresenceWriter.exe
+Tamaño : 0
+
+Nombre : GamePanel.exe
+Tamaño : 0
+
+Nombre : GenValObj.exe
+Tamaño : 0
+
+Nombre : getmac.exe
+Tamaño : 0
+
+Nombre : GfxUIEx.exe
+Tamaño : 0
+
+Nombre : Gfxv2_0.exe
+Tamaño : 1
+
+Nombre : Gfxv4_0.exe
+Tamaño : 1
+
+Nombre : gpresult.exe
+Tamaño : 0
+
+Nombre : gpupdate.exe
+Tamaño : 0
+
+Nombre : grpconv.exe
+Tamaño : 0
+
+Nombre : hdwwiz.exe
+Tamaño : 0
+
+Nombre : help.exe
+Tamaño : 0
+
+Nombre : HOSTNAME.EXE
+Tamaño : 0
+
+Nombre : hvax64.exe
+Tamaño : 0
+
+Nombre : hvix64.exe
+Tamaño : 0
+
+Nombre : icacls.exe
+Tamaño : 0
+
+Nombre : IcsEntitlementHost.exe
+Tamaño : 0
+
+Nombre : icsunattend.exe
+Tamaño : 0
+
+Nombre : ie4uinit.exe
+Tamaño : 0
+
+Nombre : ie4ushowIE.exe
+Tamaño : 0
+
+Nombre : ieUnatt.exe
+Tamaño : 0
+
+Nombre : iexpress.exe
+Tamaño : 0
+
+Nombre : igfxCUIService.exe
+Tamaño : 0
+
+Nombre : igfxEM.exe
+Tamaño : 0
+
+Nombre : igfxext.exe
+Tamaño : 0
+
+Nombre : igfxHK.exe
+Tamaño : 0
+
+Nombre : igfxTray.exe
+Tamaño : 0
+
+Nombre : immersivetpmvscmgrsvr.exe
+Tamaño : 0
+
+Nombre : InfDefaultInstall.exe
+Tamaño : 0
+
+Nombre : InputSwitchToastHandler.exe
+Tamaño : 0
+
+Nombre : IntelWiDiUMS64.exe
+Tamaño : 0
+
+Nombre : IntelWiDiVAD64.exe
+Tamaño : 0
+
+Nombre : ipconfig.exe
+Tamaño : 0
+
+Nombre : iscsicli.exe
+Tamaño : 0
+
+Nombre : iscsicpl.exe
+Tamaño : 0
+
+Nombre : isoburn.exe
+Tamaño : 0
+
+Nombre : klist.exe
+Tamaño : 0
+
+Nombre : ksetup.exe
+Tamaño : 0
+
+Nombre : ktmutil.exe
+Tamaño : 0
+
+Nombre : label.exe
+Tamaño : 0
+
+Nombre : LanguageComponentsInstallerComHandler.exe
+Tamaño : 0
+
+Nombre : LaunchTM.exe
+Tamaño : 0
+
+Nombre : LaunchWinApp.exe
+Tamaño : 0
+
+Nombre : LegacyNetUXHost.exe
+Tamaño : 0
+
+Nombre : LicenseManagerShellext.exe
+Tamaño : 0
+
+Nombre : licensingdiag.exe
+Tamaño : 0
+
+Nombre : LicensingUI.exe
+Tamaño : 0
+
+Nombre : LocationNotificationWindows.exe
+Tamaño : 0
+
+Nombre : Locator.exe
+Tamaño : 0
+
+Nombre : LockAppHost.exe
+Tamaño : 0
+
+Nombre : LockScreenContentServer.exe
+Tamaño : 0
+
+Nombre : lodctr.exe
+Tamaño : 0
+
+Nombre : logagent.exe
+Tamaño : 0
+
+Nombre : logman.exe
+Tamaño : 0
+
+Nombre : LogonUI.exe
+Tamaño : 0
+
+Nombre : lpkinstall.exe
+Tamaño : 0
+
+Nombre : lpksetup.exe
+Tamaño : 0
+
+Nombre : lpremove.exe
+Tamaño : 0
+
+Nombre : LsaIso.exe
+Tamaño : 0
+
+Nombre : lsass.exe
+Tamaño : 0
+
+Nombre : Magnify.exe
+Tamaño : 0
+
+Nombre : makecab.exe
+Tamaño : 0
+
+Nombre : manage-bde.exe
+Tamaño : 0
+
+Nombre : MbaeParserTask.exe
+Tamaño : 0
+
+Nombre : mblctr.exe
+Tamaño : 0
+
+Nombre : MBR2GPT.EXE
+Tamaño : 0
+
+Nombre : mcbuilder.exe
+Tamaño : 0
+
+Nombre : MDEServer.exe
+Tamaño : 0
+
+Nombre : MDMAgent.exe
+Tamaño : 0
+
+Nombre : MDMAppInstaller.exe
+Tamaño : 0
+
+Nombre : MdmDiagnosticsTool.exe
+Tamaño : 0
+
+Nombre : MdRes.exe
+Tamaño : 0
+
+Nombre : MdSched.exe
+Tamaño : 0
+
+Nombre : mfpmp.exe
+Tamaño : 0
+
+Nombre : MicrosoftEdgeBCHost.exe
+Tamaño : 0
+
+Nombre : MicrosoftEdgeCP.exe
+Tamaño : 0
+
+Nombre : MicrosoftEdgeDevTools.exe
+Tamaño : 0
+
+Nombre : MicrosoftEdgeSH.exe
+Tamaño : 0
+
+Nombre : mitigationscanner.exe
+Tamaño : 0
+
+Nombre : mmc.exe
+Tamaño : 0
+
+Nombre : mmgaserver.exe
+Tamaño : 0
+
+Nombre : mobsync.exe
+Tamaño : 0
+
+Nombre : mountvol.exe
+Tamaño : 0
+
+Nombre : mousocoreworker.exe
+Tamaño : 0
+
+Nombre : mpnotify.exe
+Tamaño : 0
+
+Nombre : MpSigStub.exe
+Tamaño : 0
+
+Nombre : MRINFO.EXE
+Tamaño : 0
+
+Nombre : MRT.exe
+Tamaño : 23
+
+Nombre : MSchedExe.exe
+Tamaño : 0
+
+Nombre : msconfig.exe
+Tamaño : 0
+
+Nombre : msdt.exe
+Tamaño : 0
+
+Nombre : msdtc.exe
+Tamaño : 0
+
+Nombre : msfeedssync.exe
+Tamaño : 0
+
+Nombre : mshta.exe
+Tamaño : 0
+
+Nombre : msiexec.exe
+Tamaño : 0
+
+Nombre : msinfo32.exe
+Tamaño : 0
+
+Nombre : mspaint.exe
+Tamaño : 0
+
+Nombre : msra.exe
+Tamaño : 0
+
+Nombre : MsSpellCheckingHost.exe
+Tamaño : 0
+
+Nombre : mstsc.exe
+Tamaño : 0
+
+Nombre : mtstocom.exe
+Tamaño : 0
+
+Nombre : MuiUnattend.exe
+Tamaño : 0
+
+Nombre : MultiDigiMon.exe
+Tamaño : 0
+
+Nombre : MusNotification.exe
+Tamaño : 0
+
+Nombre : MusNotificationUx.exe
+Tamaño : 0
+
+Nombre : MusNotifyIcon.exe
+Tamaño : 0
+
+Nombre : Narrator.exe
+Tamaño : 0
+
+Nombre : nbtstat.exe
+Tamaño : 0
+
+Nombre : ndadmin.exe
+Tamaño : 0
+
+Nombre : NDKPing.exe
+Tamaño : 0
+
+Nombre : net.exe
+Tamaño : 0
+
+Nombre : net1.exe
+Tamaño : 0
+
+Nombre : netbtugc.exe
+Tamaño : 0
+
+Nombre : netcfg.exe
+Tamaño : 0
+
+Nombre : NetCfgNotifyObjectHost.exe
+Tamaño : 0
+
+Nombre : NetEvtFwdr.exe
+Tamaño : 0
+
+Nombre : NetHost.exe
+Tamaño : 0
+
+Nombre : netiougc.exe
+Tamaño : 0
+
+Nombre : Netplwiz.exe
+Tamaño : 0
+
+Nombre : netsh.exe
+Tamaño : 0
+
+Nombre : NETSTAT.EXE
+Tamaño : 0
+
+Nombre : newdev.exe
+Tamaño : 0
+
+Nombre : NgcIso.exe
+Tamaño : 0
+
+Nombre : nltest.exe
+Tamaño : 0
+
+Nombre : notepad.exe
+Tamaño : 0
+
+Nombre : nslookup.exe
+Tamaño : 0
+
+Nombre : ntoskrnl.exe
+Tamaño : 2
+
+Nombre : ntprint.exe
+Tamaño : 0
+
+Nombre : odbcad32.exe
+Tamaño : 0
+
+Nombre : odbcconf.exe
+Tamaño : 0
+
+Nombre : ofdeploy.exe
+Tamaño : 0
+
+Nombre : omadmclient.exe
+Tamaño : 0
+
+Nombre : omadmprc.exe
+Tamaño : 0
+
+Nombre : openfiles.exe
+Tamaño : 0
+
+Nombre : OpenWith.exe
+Tamaño : 0
+
+Nombre : OptionalFeatures.exe
+Tamaño : 0
+
+Nombre : osk.exe
+Tamaño : 0
+
+Nombre : pacjsworker.exe
+Tamaño : 0
+
+Nombre : PackagedCWALauncher.exe
+Tamaño : 0
+
+Nombre : PasswordOnWakeSettingFlyout.exe
+Tamaño : 0
+
+Nombre : PATHPING.EXE
+Tamaño : 0
+
+Nombre : pcalua.exe
+Tamaño : 0
+
+Nombre : pcaui.exe
+Tamaño : 0
+
+Nombre : pcwrun.exe
+Tamaño : 0
+
+Nombre : perfmon.exe
+Tamaño : 0
+
+Nombre : phoneactivate.exe
+Tamaño : 0
+
+Nombre : PickerHost.exe
+Tamaño : 0
+
+Nombre : PinEnrollmentBroker.exe
+Tamaño : 0
+
+Nombre : PING.EXE
+Tamaño : 0
+
+Nombre : PkgMgr.exe
+Tamaño : 0
+
+Nombre : PktMon.exe
+Tamaño : 0
+
+Nombre : plasrv.exe
+Tamaño : 0
+
+Nombre : PnPUnattend.exe
+Tamaño : 0
+
+Nombre : pnputil.exe
+Tamaño : 0
+
+Nombre : poqexec.exe
+Tamaño : 0
+
+Nombre : pospaymentsworker.exe
+Tamaño : 0
+
+Nombre : powercfg.exe
+Tamaño : 0
+
+Nombre : PresentationHost.exe
+Tamaño : 0
+
+Nombre : prevhost.exe
+Tamaño : 0
+
+Nombre : print.exe
+Tamaño : 0
+
+Nombre : printfilterpipelinesvc.exe
+Tamaño : 0
+
+Nombre : PrintIsolationHost.exe
+Tamaño : 0
+
+Nombre : printui.exe
+Tamaño : 0
+
+Nombre : proquota.exe
+Tamaño : 0
+
+Nombre : provlaunch.exe
+Tamaño : 0
+
+Nombre : provtool.exe
+Tamaño : 0
+
+Nombre : ProximityUxHost.exe
+Tamaño : 0
+
+Nombre : prproc.exe
+Tamaño : 0
+
+Nombre : psr.exe
+Tamaño : 0
+
+Nombre : pwlauncher.exe
+Tamaño : 0
+
+Nombre : quickassist.exe
+Tamaño : 0
+
+Nombre : rasautou.exe
+Tamaño : 0
+
+Nombre : rasdial.exe
+Tamaño : 0
+
+Nombre : raserver.exe
+Tamaño : 0
+
+Nombre : rasphone.exe
+Tamaño : 0
+
+Nombre : rdpclip.exe
+Tamaño : 0
+
+Nombre : rdpinput.exe
+Tamaño : 0
+
+Nombre : RdpSa.exe
+Tamaño : 0
+
+Nombre : RdpSaProxy.exe
+Tamaño : 0
+
+Nombre : RdpSaUacHelper.exe
+Tamaño : 0
+
+Nombre : rdrleakdiag.exe
+Tamaño : 0
+
+Nombre : ReAgentc.exe
+Tamaño : 0
+
+Nombre : recdisc.exe
+Tamaño : 0
+
+Nombre : recover.exe
+Tamaño : 0
+
+Nombre : RecoveryDrive.exe
+Tamaño : 0
+
+Nombre : refsutil.exe
+Tamaño : 0
+
+Nombre : reg.exe
+Tamaño : 0
+
+Nombre : regedt32.exe
+Tamaño : 0
+
+Nombre : regini.exe
+Tamaño : 0
+
+Nombre : Register-CimProvider.exe
+Tamaño : 0
+
+Nombre : regsvr32.exe
+Tamaño : 0
+
+Nombre : rekeywiz.exe
+Tamaño : 0
+
+Nombre : relog.exe
+Tamaño : 0
+
+Nombre : RelPost.exe
+Tamaño : 0
+
+Nombre : RemotePosWorker.exe
+Tamaño : 0
+
+Nombre : repair-bde.exe
+Tamaño : 0
+
+Nombre : replace.exe
+Tamaño : 0
+
+Nombre : ResetEngine.exe
+Tamaño : 0
+
+Nombre : resmon.exe
+Tamaño : 0
+
+Nombre : RMActivate.exe
+Tamaño : 0
+
+Nombre : RMActivate_isv.exe
+Tamaño : 0
+
+Nombre : RMActivate_ssp.exe
+Tamaño : 0
+
+Nombre : RMActivate_ssp_isv.exe
+Tamaño : 0
+
+Nombre : RmClient.exe
+Tamaño : 0
+
+Nombre : rmttpmvscmgrsvr.exe
+Tamaño : 0
+
+Nombre : Robocopy.exe
+Tamaño : 0
+
+Nombre : ROUTE.EXE
+Tamaño : 0
+
+Nombre : rpcnetp.exe
+Tamaño : 0
+
+Nombre : RpcPing.exe
+Tamaño : 0
+
+Nombre : rrinstaller.exe
+Tamaño : 0
+
+Nombre : rstrui.exe
+Tamaño : 0
+
+Nombre : runas.exe
+Tamaño : 0
+
+Nombre : rundll32.exe
+Tamaño : 0
+
+Nombre : runexehelper.exe
+Tamaño : 0
+
+Nombre : RunLegacyCPLElevated.exe
+Tamaño : 0
+
+Nombre : runonce.exe
+Tamaño : 0
+
+Nombre : RuntimeBroker.exe
+Tamaño : 0
+
+Nombre : sc.exe
+Tamaño : 0
+
+Nombre : schtasks.exe
+Tamaño : 0
+
+Nombre : sdbinst.exe
+Tamaño : 0
+
+Nombre : sdchange.exe
+Tamaño : 0
+
+Nombre : sdclt.exe
+Tamaño : 0
+
+Nombre : sdiagnhost.exe
+Tamaño : 0
+
+Nombre : SearchFilterHost.exe
+Tamaño : 0
+
+Nombre : SearchIndexer.exe
+Tamaño : 0
+
+Nombre : SearchProtocolHost.exe
+Tamaño : 0
+
+Nombre : SecEdit.exe
+Tamaño : 0
+
+Nombre : secinit.exe
+Tamaño : 0
+
+Nombre : securekernel.exe
+Tamaño : 0
+
+Nombre : SecurityHealthHost.exe
+Tamaño : 0
+
+Nombre : SecurityHealthService.exe
+Tamaño : 0
+
+Nombre : SecurityHealthSystray.exe
+Tamaño : 0
+
+Nombre : SensorDataService.exe
+Tamaño : 0
+
+Nombre : services.exe
+Tamaño : 0
+
+Nombre : sessionmsg.exe
+Tamaño : 0
+
+Nombre : sethc.exe
+Tamaño : 0
+
+Nombre : setspn.exe
+Tamaño : 0
+
+Nombre : SettingSyncHost.exe
+Tamaño : 0
+
+Nombre : setupcl.exe
+Tamaño : 0
+
+Nombre : setupugc.exe
+Tamaño : 0
+
+Nombre : setx.exe
+Tamaño : 0
+
+Nombre : sfc.exe
+Tamaño : 0
+
+Nombre : SgrmBroker.exe
+Tamaño : 0
+
+Nombre : SgrmLpac.exe
+Tamaño : 0
+
+Nombre : shrpubw.exe
+Tamaño : 0
+
+Nombre : shutdown.exe
+Tamaño : 0
+
+Nombre : sigverif.exe
+Tamaño : 0
+
+Nombre : SIHClient.exe
+Tamaño : 0
+
+Nombre : sihost.exe
+Tamaño : 0
+
+Nombre : SlideToShutDown.exe
+Tamaño : 0
+
+Nombre : slui.exe
+Tamaño : 0
+
+Nombre : smartscreen.exe
+Tamaño : 1
+
+Nombre : smss.exe
+Tamaño : 0
+
+Nombre : SndVol.exe
+Tamaño : 0
+
+Nombre : SnippingTool.exe
+Tamaño : 1
+
+Nombre : snmptrap.exe
+Tamaño : 0
+
+Nombre : sort.exe
+Tamaño : 0
+
+Nombre : SpaceAgent.exe
+Tamaño : 0
+
+Nombre : spaceman.exe
+Tamaño : 0
+
+Nombre : SpatialAudioLicenseSrv.exe
+Tamaño : 0
+
+Nombre : Spectrum.exe
+Tamaño : 0
+
+Nombre : spoolsv.exe
+Tamaño : 0
+
+Nombre : SppExtComObj.Exe
+Tamaño : 0
+
+Nombre : sppsvc.exe
+Tamaño : 1
+
+Nombre : srdelayed.exe
+Tamaño : 0
+
+Nombre : SrTasks.exe
+Tamaño : 0
+
+Nombre : stordiag.exe
+Tamaño : 0
+
+Nombre : subst.exe
+Tamaño : 0
+
+Nombre : svchost.exe
+Tamaño : 0
+
+Nombre : sxstrace.exe
+Tamaño : 0
+
+Nombre : SyncHost.exe
+Tamaño : 0
+
+Nombre : SysResetErr.exe
+Tamaño : 0
+
+Nombre : systeminfo.exe
+Tamaño : 0
+
+Nombre : SystemPropertiesAdvanced.exe
+Tamaño : 0
+
+Nombre : SystemPropertiesComputerName.exe
+Tamaño : 0
+
+Nombre : SystemPropertiesDataExecutionPrevention.exe
+Tamaño : 0
+
+Nombre : SystemPropertiesHardware.exe
+Tamaño : 0
+
+Nombre : SystemPropertiesPerformance.exe
+Tamaño : 0
+
+Nombre : SystemPropertiesProtection.exe
+Tamaño : 0
+
+Nombre : SystemPropertiesRemote.exe
+Tamaño : 0
+
+Nombre : systemreset.exe
+Tamaño : 0
+
+Nombre : SystemSettingsAdminFlows.exe
+Tamaño : 0
+
+Nombre : SystemSettingsBroker.exe
+Tamaño : 0
+
+Nombre : SystemSettingsRemoveDevice.exe
+Tamaño : 0
+
+Nombre : SystemUWPLauncher.exe
+Tamaño : 0
+
+Nombre : systray.exe
+Tamaño : 0
+
+Nombre : tabcal.exe
+Tamaño : 0
+
+Nombre : takeown.exe
+Tamaño : 0
+
+Nombre : TapiUnattend.exe
+Tamaño : 0
+
+Nombre : tar.exe
+Tamaño : 0
+
+Nombre : taskhostw.exe
+Tamaño : 0
+
+Nombre : taskkill.exe
+Tamaño : 0
+
+Nombre : tasklist.exe
+Tamaño : 0
+
+Nombre : Taskmgr.exe
+Tamaño : 0
+
+Nombre : tcblaunch.exe
+Tamaño : 0
+
+Nombre : tcmsetup.exe
+Tamaño : 0
+
+Nombre : TCPSVCS.EXE
+Tamaño : 0
+
+Nombre : ThumbnailExtractionHost.exe
+Tamaño : 0
+
+Nombre : TieringEngineService.exe
+Tamaño : 0
+
+Nombre : timeout.exe
+Tamaño : 0
+
+Nombre : TokenBrokerCookies.exe
+Tamaño : 0
+
+Nombre : TpmInit.exe
+Tamaño : 0
+
+Nombre : tpmvscmgr.exe
+Tamaño : 0
+
+Nombre : tpmvscmgrsvr.exe
+Tamaño : 0
+
+Nombre : tracerpt.exe
+Tamaño : 0
+
+Nombre : TRACERT.EXE
+Tamaño : 0
+
+Nombre : TSTheme.exe
+Tamaño : 0
+
+Nombre : TSWbPrxy.exe
+Tamaño : 0
+
+Nombre : TsWpfWrp.exe
+Tamaño : 0
+
+Nombre : ttdinject.exe
+Tamaño : 0
+
+Nombre : tttracer.exe
+Tamaño : 0
+
+Nombre : typeperf.exe
+Tamaño : 0
+
+Nombre : tzsync.exe
+Tamaño : 0
+
+Nombre : tzutil.exe
+Tamaño : 0
+
+Nombre : ucsvc.exe
+Tamaño : 0
+
+Nombre : UIMgrBroker.exe
+Tamaño : 0
+
+Nombre : unlodctr.exe
+Tamaño : 0
+
+Nombre : unregmp2.exe
+Tamaño : 0
+
+Nombre : upfc.exe
+Tamaño : 0
+
+Nombre : UpgradeResultsUI.exe
+Tamaño : 0
+
+Nombre : upnpcont.exe
+Tamaño : 0
+
+Nombre : UserAccountBroker.exe
+Tamaño : 0
+
+Nombre : UserAccountControlSettings.exe
+Tamaño : 0
+
+Nombre : userinit.exe
+Tamaño : 0
+
+Nombre : UsoClient.exe
+Tamaño : 0
+
+Nombre : usocoreworker.exe
+Tamaño : 0
+
+Nombre : UtcDecoderHost.exe
+Tamaño : 0
+
+Nombre : Utilman.exe
+Tamaño : 0
+
+Nombre : VaultCmd.exe
+Tamaño : 0
+
+Nombre : vds.exe
+Tamaño : 0
+
+Nombre : vdsldr.exe
+Tamaño : 0
+
+Nombre : verclsid.exe
+Tamaño : 0
+
+Nombre : verifier.exe
+Tamaño : 0
+
+Nombre : verifiergui.exe
+Tamaño : 0
+
+Nombre : vsjitdebugger.exe
+Tamaño : 0
+
+Nombre : vssadmin.exe
+Tamaño : 0
+
+Nombre : VSSVC.exe
+Tamaño : 0
+
+Nombre : w32tm.exe
+Tamaño : 0
+
+Nombre : WaaSMedicAgent.exe
+Tamaño : 0
+
+Nombre : waitfor.exe
+Tamaño : 0
+
+Nombre : WallpaperHost.exe
+Tamaño : 0
+
+Nombre : wbadmin.exe
+Tamaño : 0
+
+Nombre : wbengine.exe
+Tamaño : 0
+
+Nombre : wecutil.exe
+Tamaño : 0
+
+Nombre : WerFault.exe
+Tamaño : 0
+
+Nombre : WerFaultSecure.exe
+Tamaño : 0
+
+Nombre : wermgr.exe
+Tamaño : 0
+
+Nombre : wevtutil.exe
+Tamaño : 0
+
+Nombre : wextract.exe
+Tamaño : 0
+
+Nombre : WFS.exe
+Tamaño : 0
+
+Nombre : where.exe
+Tamaño : 0
+
+Nombre : whoami.exe
+Tamaño : 0
+
+Nombre : wiaacmgr.exe
+Tamaño : 0
+
+Nombre : wiawow64.exe
+Tamaño : 0
+
+Nombre : wifitask.exe
+Tamaño : 0
+
+Nombre : wimserv.exe
+Tamaño : 0
+
+Nombre : WinBioDataModelOOBE.exe
+Tamaño : 0
+
+Nombre : Windows.Media.BackgroundPlayback.exe
+Tamaño : 0
+
+Nombre : Windows.WARP.JITService.exe
+Tamaño : 0
+
+Nombre : WindowsActionDialog.exe
+Tamaño : 0
+
+Nombre : WindowsUpdateElevatedInstaller.exe
+Tamaño : 0
+
+Nombre : wininit.exe
+Tamaño : 0
+
+Nombre : winload.exe
+Tamaño : 0
+
+Nombre : winlogon.exe
+Tamaño : 0
+
+Nombre : winresume.exe
+Tamaño : 0
+
+Nombre : winrs.exe
+Tamaño : 0
+
+Nombre : winrshost.exe
+Tamaño : 0
+
+Nombre : WinRTNetMUAHostServer.exe
+Tamaño : 0
+
+Nombre : WinSAT.exe
+Tamaño : 1
+
+Nombre : winver.exe
+Tamaño : 0
+
+Nombre : wkspbroker.exe
+Tamaño : 0
+
+Nombre : wksprt.exe
+Tamaño : 0
+
+Nombre : wlanext.exe
+Tamaño : 0
+
+Nombre : wlrmdr.exe
+Tamaño : 0
+
+Nombre : WMPDMC.exe
+Tamaño : 0
+
+Nombre : WorkFolders.exe
+Tamaño : 0
+
+Nombre : wowreg32.exe
+Tamaño : 0
+
+Nombre : wpbbin.exe
+Tamaño : 0
+
+Nombre : WpcMon.exe
+Tamaño : 0
+
+Nombre : WpcTok.exe
+Tamaño : 0
+
+Nombre : WPDShextAutoplay.exe
+Tamaño : 0
+
+Nombre : wpnpinst.exe
+Tamaño : 0
+
+Nombre : wpr.exe
+Tamaño : 0
+
+Nombre : write.exe
+Tamaño : 0
+
+Nombre : wscadminui.exe
+Tamaño : 0
+
+Nombre : WSCollect.exe
+Tamaño : 0
+
+Nombre : wscript.exe
+Tamaño : 0
+
+Nombre : WSManHTTPConfig.exe
+Tamaño : 0
+
+Nombre : wsmprovhost.exe
+Tamaño : 0
+
+Nombre : wsqmcons.exe
+Tamaño : 0
+
+Nombre : WSReset.exe
+Tamaño : 0
+
+Nombre : wuapihost.exe
+Tamaño : 0
+
+Nombre : wuauclt.exe
+Tamaño : 0
+
+Nombre : WUDFCompanionHost.exe
+Tamaño : 0
+
+Nombre : WUDFHost.exe
+Tamaño : 0
+
+Nombre : wusa.exe
+Tamaño : 0
+
+Nombre : WWAHost.exe
+Tamaño : 0
+
+Nombre : XblGameSaveTask.exe
+Tamaño : 0
+
+Nombre : xcopy.exe
+Tamaño : 0
+
+Nombre : xpsrchvw.exe
+Tamaño : 1
+
+Nombre : xwizard.exe
+Tamaño : 0
+
+
+
+PS C:\Users\Paola Fuentes Caro> Get-HotFix -Description 'security*'
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+TOM           Security Update  KB4503308                          9/07/2019 12:00...
+TOM           Security Update  KB4508433     NT AUTHORITY\SYSTEM  14/08/2019 12:0...
+TOM           Security Update  KB4509096                          9/07/2019 12:00...
+TOM           Security Update  KB4515383     NT AUTHORITY\SYSTEM  12/09/2019 12:0...
+TOM           Security Update  KB4516115     NT AUTHORITY\SYSTEM  15/09/2019 12:0...
+TOM           Security Update  KB4520390     NT AUTHORITY\SYSTEM  5/10/2019 12:00...
+TOM           Security Update  KB4521863     NT AUTHORITY\SYSTEM  10/10/2019 12:0...
+TOM           Security Update  KB4524569     NT AUTHORITY\SYSTEM  13/11/2019 12:0...
+TOM           Security Update  KB4528759     NT AUTHORITY\SYSTEM  22/01/2020 12:0...
+TOM           Security Update  KB4537759     NT AUTHORITY\SYSTEM  16/02/2020 12:0...
+TOM           Security Update  KB4538674     NT AUTHORITY\SYSTEM  15/02/2020 12:0...
+TOM           Security Update  KB4541338     NT AUTHORITY\SYSTEM  12/03/2020 12:0...
+
+
+PS C:\Users\Paola Fuentes Caro> Get-HotFix | Where-Object {$_.installedby -like '*system*' -and $_.description -like 'update'}
+
+Source        Description      HotFixID      InstalledBy          InstalledOn
+------        -----------      --------      -----------          -----------
+TOM           Update           KB4534132     NT AUTHORITY\SYSTEM  16/02/2020 12:0...
+TOM           Update           KB4551762     NT AUTHORITY\SYSTEM  14/03/2020 12:0...
+
+
+PS C:\Users\Paola Fuentes Caro> Get-Process | Where-Object -FilterScript {$_.Name -like 'svchost*'}
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+   1655      20    11764      14344               540   0 svchost
+    548      30    10668      20408               568   0 svchost
+    295      10     2780       5156               652   0 svchost
+    202       9     1792       3320               888   0 svchost
+     86       5      908       1392               944   0 svchost
+    174      10     1960       3948               952   0 svchost
+   1522      27    18808      27084               968   0 svchost
+    615      12     3220       7568              1144   0 svchost
+    263      13     2704       5676              1152   0 svchost
+    225      13     3792       6956              1208   0 svchost
+    157       9     2164       4632              1240   0 svchost
+    285      10     2392       4748              1260   0 svchost
+    143      10     1644       2336              1316   0 svchost
+    269      16     2888       4764              1372   0 svchost
+    413      17     6884       9532              1388   0 svchost
+    438      16    15168      10340              1504   0 svchost
+    281       7     1288       1968              1580   0 svchost
+    243      15    91044      84044              1584   0 svchost
+    176       9     1940       3620              1596   0 svchost
+    174      38     8136       3508              1688   0 svchost
+    225      14     2284       4740              1716   0 svchost
+    226      10     2344       3748              1744   0 svchost
+    385      16     5076       7252              1796   0 svchost
+    226       7     2360       2376              1844   0 svchost
+    173      10     1844       6140              1920   0 svchost
+    296      14     3872       4956              1968   0 svchost
+   1004      15     3792       5808              2052   0 svchost
+    299      10     9504      15020              2272   0 svchost
+    378      17     2896       4880              2300   0 svchost
+    142      13     1704       2632              2308   0 svchost
+    249      15     3244       9116              2420   0 svchost
+    283      14     4296      12252              2436   0 svchost
+    200       9     2152       3840              2552   0 svchost
+    529      20     7228       9712              2640   0 svchost
+    127       8     1476       3336              2668   0 svchost
+    271      16     2812       6716              2712   0 svchost
+    449      34    12296      12452              2892   0 svchost
+    181      10     1852       2408              3020   0 svchost
+    450      28     5144       9692              3100   0 svchost
+    196       9     1904       3436              3144   0 svchost
+    287      14     3908      11324              3204   0 svchost
+    208      12     2112       2576              3344   0 svchost
+    272      14     2940       4340              3352   0 svchost
+    505      18    11072      13908              3376   0 svchost
+    398      21    39908      23620              3384   0 svchost
+    569      25    20404      25008              3392   0 svchost
+    263      13     2596       2640              3400   0 svchost
+    128       7     1308       2012              3456   0 svchost
+    432      20     5232      13668              3532   0 svchost
+    135       9     1580       1580              3588   0 svchost
+    479      22     3952       7072              3848   0 svchost
+    109       7     1284       1532              3892   0 svchost
+    285      16     2952       4588              4220   0 svchost
+    673      32     7884      31624       8,61   4240   3 svchost
+    287      14     3680       7320              4244   0 svchost
+    207      11     2296       3772              4264   0 svchost
+    405      27     3556       5416              4324   0 svchost
+    140       9     1580       1792              5876   0 svchost
+    171       9     1968       4340              5904   0 svchost
+    233      12     2976      11468              6184   0 svchost
+    234      12     2880       5036              6448   0 svchost
+    129       8     2156       2800              6544   0 svchost
+    289      10     1888       5288              6636   0 svchost
+    428      21     5836      11496              6664   0 svchost
+    224      11     2456       3908              7032   0 svchost
+    324      13     4664       5928              7044   0 svchost
+    361      17     5168      11432              7240   0 svchost
+    147       9     1676       7260              7804   0 svchost
+    237      13     3024       5796              8336   0 svchost
+    383      16     3724      10268              8568   0 svchost
+    238      13     2960       4344              8728   0 svchost
+    407      18     5740      11436              8884   0 svchost
+    356      18     8468      21496              9508   0 svchost
+    183     115     2496       2408             10468   0 svchost
+    164       9     1772       3528             10536   0 svchost
+    402      14     3724       9372             10668   0 svchost
+    195      16     6704       4236             11812   0 svchost
+    827      81    40720      31580             11960   0 svchost
+    167       9     1640       6064             12880   0 svchost
+    977      27    11688      42316      28,66  13500   3 svchost
+    411      20     5048      26548       2,05  13792   3 svchost
+    156      12     1724       6692             15176   0 svchost
+    204      11     2044       8048             15356   0 svchost
+    474      19    11224      26396      41,30  16564   3 svchost
+
+
+PS C:\Users\Paola Fuentes Caro> Get-Process | Where-Object -FilterScript {$_.Name -like 'conhost*'}
+PS C:\Users\Paola Fuentes Caro> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20200324221745
+**********************
